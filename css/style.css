@@ -1,0 +1,358 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container-description {
+  width: 22rem;
+  margin: 0 auto;
+  margin-top: -6rem;
+  font-size: 1.7rem;
+}
+.container-description h3 {
+  margin-bottom: 1rem;
+}
+
+header {
+  min-width: 50rem;
+}
+header .container-logo {
+  position: relative;
+  height: 12rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* The typewriter cursor effect */
+}
+header .container-logo img {
+  width: 9.8rem;
+  height: 9.8rem;
+  margin-left: 3rem;
+}
+header .container-logo h1 {
+  width: 30.9rem;
+  height: 6.2rem;
+  color: #000;
+  text-align: center;
+  font-family: "Jockey One", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2rem;
+  overflow: hidden;
+  border-right: 0.1rem solid #183153;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 1 forwards;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #183153;
+  }
+}
+
+nav {
+  min-width: 50rem;
+  z-index: 1;
+}
+nav .container-secciones {
+  background-color: #183153;
+  height: 9.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 14rem;
+  border-top: 0.3rem solid #646464;
+  border-bottom: 0.3rem solid #646464;
+}
+nav .container-secciones .secciones {
+  display: flex;
+  width: 30rem;
+  padding: 4rem;
+  cursor: pointer;
+  align-items: center;
+  gap: 1rem;
+}
+nav .container-secciones .secciones .fa-solid {
+  width: 2.2rem;
+  height: 2.2rem;
+  color: #B9B2B2;
+  font-size: 3rem;
+}
+nav .container-secciones .secciones p {
+  width: 11.6rem;
+  height: 2.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Jockey One", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+nav .container-secciones .container-angle-right {
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+nav .container-secciones .container-angle-right .fa-solid {
+  stroke-width: 0.2rem;
+  color: #B9B2B2;
+  font-size: 3rem;
+}
+
+.secciones-menu {
+  position: fixed;
+  left: 40rem;
+  top: 8.9%;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0;
+  width: 80%;
+  background: #fff;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  max-width: 414px;
+  transform: translateX(-100%);
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  border-top: 4px solid #f7f7f7;
+  overflow-x: hidden;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+.secciones-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 6rem;
+  font-size: 3.3rem;
+}
+.secciones-menu ul li {
+  padding: 10px;
+  transition: transform 0.3s;
+  margin-bottom: 4rem;
+}
+.secciones-menu ul li a {
+  color: #183153;
+  text-decoration: none;
+}
+.secciones-menu ul li:last-child {
+  border-bottom: none;
+}
+.secciones-menu ul li:hover {
+  transform: translateX(50px);
+  border-left: 1px solid #ff6200;
+  background-color: #f7f7f7;
+}
+.secciones-menu .fa-regular {
+  font-size: 4rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  color: #ff6200;
+  cursor: pointer;
+}
+
+.show-menu {
+  display: flex;
+  justify-content: space-between;
+  opacity: 1; /* Cuando se muestra el menú, configurar la opacidad a 1 */
+}
+
+main {
+  min-width: 50rem;
+}
+main section .container-titulos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  margin-top: 4rem;
+}
+main section .container-titulos h2 {
+  color: #FD9158;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 13.5px; /* 61.364% */
+  letter-spacing: 0.44px;
+  text-transform: uppercase;
+}
+main section .container-titulos h3 {
+  color: #353430;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 27px */
+}
+main section .container-cards {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 1.5rem 0;
+  margin-bottom: 4rem;
+}
+main section .container-cards .cards {
+  position: relative;
+  flex: 0 0 30.9rem;
+  height: 45rem;
+  overflow: hidden;
+  margin-left: 1.5rem;
+  border-radius: 1.8rem;
+  box-shadow: 0.2rem 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
+}
+main section .container-cards .cards img {
+  width: 50%;
+  margin: 8rem;
+}
+main section .container-cards .cards .body {
+  position: absolute;
+  top: 38rem;
+  left: 23rem;
+  padding: 2.8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 5rem;
+  background-color: #FD9158;
+}
+main section .container-cards .cards .body .fa-regular {
+  color: #fff;
+}
+main section .container-ubicacion {
+  margin-bottom: 10rem;
+}
+main section .container-ubicacion img {
+  width: 100%;
+}
+main section .container-ubicacion #ubicacion {
+  margin-left: 1rem;
+}
+main section .container-ubicacion #ubicacion h3 {
+  font-size: 2.5rem;
+}
+main section .container-ubicacion #ubicacion p {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+}
+main section .container-ubicacion #map {
+  width: 80%;
+  height: 400px; /* Altura inicial del mapa */
+  margin: 0 auto; /* Centra el mapa horizontalmente */
+  margin-top: 4rem;
+  margin-bottom: 20px; /* Espaciado inferior */
+  border: 2px solid #ccc; /* Agregar un borde alrededor del mapa */
+  border-radius: 10px; /* Añadir bordes redondeados al contenedor del mapa */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agregar una sombra alrededor del mapa */
+}
+
+footer {
+  min-width: 45rem;
+}
+footer .footer {
+  z-index: 1;
+  --footer-background:#183153;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+  color: #fff;
+}
+footer .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+footer .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+footer .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+footer .footer .content a, footer .footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+footer .footer .content b {
+  color: white;
+}
+footer .footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+footer .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+footer .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+footer .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
