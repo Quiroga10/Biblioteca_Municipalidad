@@ -27,7 +27,7 @@
             </div>
             <div id="secciones-menu" class="secciones-menu">
                 <ul>
-                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="./historia.html">Historia</a></li>
                     <li><a href="#mision">Misión</a></li>
                     <li><a href="#vision">Visión</a></li>
                     <li><a href="#libros">Libros</a></li>
@@ -49,7 +49,7 @@
                 </li>
                 <li>
                     <i class="fa-brands fa-whatsapp" style="color: #0dc143; font-size: 4rem;"></i>
-                    <p><a href="https://twitter.com/noprog" target="_blank">Contáctanos en <br>Whatsapp</a></p>
+                    <p><a href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito más informacion!" target="_blank">Envíanos un<br>mensaje</a></p>
                 </li>
                 <li>
                     <img src="images/gplus-circle.png" width="32" height="32">
@@ -315,7 +315,7 @@
                     <div><b>Dirección:</b><a href="#">Calle Miguel Grau 416 - Jayanca - Lambayeque</a>></div>
                     <div><b>Teléfono:</b><a href="#">956 452 210</a></div>
                     <div><b>Correo electronico</b><a href="#">bibliotecamunicipalidad@gmail.com</a></div>
-                    <div><b>Athod</b><a href="#">Pamuz</a><a href="#">Vapert</a><a href="#">Neesk</a><a href="#">Omemanen</a></div>
+                    <div><b>Horarios:</b>Lunes - Viernes -- 07:30 - 20:00</div>
                 </div>
                 <div><a class="image" href="./index.html" target="_blank" style="background-image: url(./assets/img/logo-footer-biblioteca.png)"></a>
                     <p>Biblioteca Municipalidad</p>
@@ -347,35 +347,7 @@
             title: "Institución Educativa Carmelo Felix Medrano 10125 - Jayanca",
         });
         }
-
-        document.getElementById('secciones-button').addEventListener('click', function() {
-            var seccionesMenu = document.getElementById('secciones-menu');
-            var body = document.querySelector('body');
-            seccionesMenu.style.display = 'flex';
-            seccionesMenu.style.justifyContent = 'space-between';
-
-            setTimeout(function() {
-                seccionesMenu.classList.add('show-menu');
-            }, 0);
-
-            //ocultar el contenido principal
-            body.style.overflow = 'hidden';
-        });
-
-        document.getElementById('close-menu').addEventListener('click', function() {
-            var seccionesMenu = document.getElementById('secciones-menu');
-            var body = document.querySelector('body');
-
-             // Ocultar el menú gradualmente
-            seccionesMenu.classList.remove('show-menu');
-            
-            // Restaurar el scroll en el contenido principal después de la animación
-            setTimeout(function() {
-                seccionesMenu.style.display = 'none';
-                body.style.overflow = 'auto';
-            }, 300); // 300ms es la duración de la transición CSS
-        });
-
     </script>
+    <script src="./js/navbar.js"></script>
 </body>
 </html>
