@@ -269,15 +269,14 @@ main{
                 
                 .body{
                     position: absolute;
-                    top: 38rem;
+                    top: 37rem;
                     left: 23rem;
                     padding: 2.8rem;
                     font-family: $font-montserrat;
                     font-weight: 600;
                     border-radius: 5rem;
                     background-color: $color-orange;
-                    width: 4rem;
-                    height: 4rem;
+                    font-size: 1.5rem;
                     .fa-regular{
                         color: $color-white;
                     }
