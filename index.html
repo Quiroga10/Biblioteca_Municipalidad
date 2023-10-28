@@ -65,7 +65,7 @@
         </section>
         <section>
             <div class="container-cards">
-                <article class="cards">
+                <article class="cards" id="book1">
                     <img src="./assets/img/img-libros/2.jpg" alt="">
                     <section class="container-description">
                         <h3>
@@ -78,7 +78,17 @@
                         </p>
                     </section>
                     <section class="body">
-                        <i class="fa-regular fa-eye"></i>
+                        <i class="fa-regular fa-eye" onclick="toggleDescription('book1')"></i>
+                    </section>
+                    <section class="description" style="display: none;">
+                        <h4>Obra "Hombre y Engranajes"</h4>
+                        <div class="container_parrafos_libro">
+                            <p>La obra <em>"Hombre y Engranajes"</em> es una creación artística del pintor y escultor uruguayo <strong>Joaquín Torres-García</strong>. Esta obra, que pertenece al movimiento artístico conocido como el <strong>Constructivismo</strong>, es una representación simbólica y abstracta de la relación entre el ser humano y la tecnología industrial, particularmente la maquinaria y los engranajes.</p>
+                            
+                            <p>La pintura muestra un hombre estilizado junto a una serie de engranajes, ruedas y elementos geométricos, todos dispuestos de manera organizada y estructurada. Torres-García utiliza líneas, formas y colores para crear una composición que refleja la interacción del ser humano con la maquinaria moderna y la importancia de la tecnología en la sociedad industrial.</p>
+                            
+                            <p>La obra <em>"Hombre y Engranajes"</em> es considerada una representación icónica del arte constructivista y del pensamiento de Torres-García, quien exploró temas como la armonía entre el arte y la ciencia, la fusión de lo humano y lo mecánico, y la búsqueda de un lenguaje visual universal. Esta pintura es apreciada por su enfoque en la abstracción geométrica y su mensaje sobre la influencia de la tecnología en la vida cotidiana.</p>
+                        </div>
                     </section>
                 </article>
                 <article class="cards">
@@ -334,5 +344,6 @@
     </footer>
     <script src="./js/google_maps.js"></script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/description_libros.js"></script>
 </body>
 </html>

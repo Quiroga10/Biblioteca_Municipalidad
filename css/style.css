@@ -305,6 +305,25 @@ main section .container-cards .cards .body {
 }
 main section .container-cards .cards .body .fa-regular {
   color: #fff;
+  cursor: pointer;
+}
+main section .container-cards .cards .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main section .container-cards .cards .description h4 {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+main section .container-cards .cards .description .container_parrafos_libro {
+  width: 25rem;
+}
+main section .container-cards .cards .description .container_parrafos_libro p {
+  font-size: 1.12rem;
+  text-align: justify;
 }
 main section .container-ubicacion {
   margin-bottom: 10rem;

@@ -130,6 +130,25 @@ main{
                     font-size: 1.5rem;
                     .fa-regular{
                         color: $color-white;
+                        cursor: pointer;
+                    }
+                }
+                .description{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h4{
+                        margin-top: 4rem;
+                        margin-bottom: 3rem;
+                        font-size: 1.5rem;
+                    }
+                    .container_parrafos_libro{
+                        width: 25rem;
+                        p{
+                            font-size: 1.12rem;
+                            text-align: justify;
+                        }
                     }
                 }
             }
