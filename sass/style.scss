@@ -111,6 +111,12 @@ main{
                     width: 50%;
                     margin: 8rem;
                 }
+                img:hover{
+                    width: 40%;
+                    transition: .3s;
+                    cursor: pointer;
+                    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+                }
                 
                 .body{
                     position: absolute;

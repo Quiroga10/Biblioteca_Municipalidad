@@ -286,6 +286,12 @@ main section .container-cards .cards img {
   width: 50%;
   margin: 8rem;
 }
+main section .container-cards .cards img:hover {
+  width: 40%;
+  transition: 0.3s;
+  cursor: pointer;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
 main section .container-cards .cards .body {
   position: absolute;
   top: 37rem;
