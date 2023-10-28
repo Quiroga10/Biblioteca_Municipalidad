@@ -189,6 +189,7 @@ main article h1 {
 }
 main article p {
   font-size: 2rem;
+  text-align: justify;
   margin-bottom: 2rem;
 }
 main .container-button {
