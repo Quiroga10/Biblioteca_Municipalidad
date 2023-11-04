@@ -219,6 +219,7 @@ body {
   .wpac-flex-cards:not(.light) {
     background: #232223;
     color: white;
+    min-width: 50rem;
   }
 }
 .wpac-flex-cards .options {
