@@ -1,8 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/galeria.css">
+    <link rel="stylesheet" href="./css/header-navbar-comunes.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <title>Galeria</title>
 </head>
 <body>
@@ -34,5 +38,79 @@
             </div>
         </div>
     </nav>
+    <main>
+        <div class="wpac-flex-cards">
+            <div class="options">
+                <div class="option active" style="--optionBackground:url(../assets/img/img-libros/7.jpg)">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-walking"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Card Title</div>
+                            <div class="sub">Some description for the card.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option" style="--optionBackground:url(../assets/img/img-libros/16.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-snowflake"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Card Title</div>
+                            <div class="sub">Some description for the card.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option" style="--optionBackground:url(../assets/img/img-libros/22.png);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-tree"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Card Title</div>
+                            <div class="sub">Some description for the card.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="option" style="--optionBackground:url(../assets/img/img-libros/24.jpg);">
+                    <div class="shadow"></div>
+                        <div class="label">
+                            <div class="icon">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                            <div class="info">
+                                <div class="main">Card Title</div>
+                                <div class="sub">Some description for the card.</div>
+                            </div>
+                        </div>
+                </div>
+                <div class="option" style="--optionBackground:url(../assets/img/img-libros/18.jpg);">
+                    <div class="shadow"></div>
+                    <div class="label">
+                        <div class="icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="info">
+                            <div class="main">Card Title</div>
+                            <div class="sub">Some description for the card.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/navbar.js"></script>
+    <script>
+        $(".option").click(function(){
+            $(".option").removeClass("active");
+            $(this).addClass("active");
+        
+        });
+    </script>
 </body>
 </html>
