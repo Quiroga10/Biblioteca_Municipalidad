@@ -294,9 +294,44 @@ footer{
     }
 }
 
-@media (max-width: 472px){
-    .sticky-container{
-        display: none;
+@media (min-width: 320px) and (max-width: 767px){
+    main{
+        width: 82rem;
+    }
+    footer{
+        min-width: 82rem;
+        .footer{
+            .bubbles{
+                width: 76rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    main{
+        width: 151rem;
+        margin: 0 auto;
+    }
+    section{
+        .container-cards{
+            justify-content: center;
+        }
+    }
+    footer{
+        min-width: 151rem;
+        .footer{
+            .bubbles{
+                width: 134rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    main{
+        width: 102rem;
+        margin: 0 auto;
     }
 }
 
