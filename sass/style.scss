@@ -253,6 +253,12 @@ footer{
     }
 }
 
+@media (max-width: 472px){
+    .sticky-container{
+        display: none;
+    }
+}
+
 @keyframes bubble-size {
     0%, 75% {
         width:var(--size, 4rem);

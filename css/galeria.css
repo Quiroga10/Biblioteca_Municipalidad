@@ -101,8 +101,8 @@ nav .container-secciones .secciones p {
 }
 nav .container-secciones .secciones-menu {
   position: fixed;
+  top: 6rem;
   left: 40rem;
-  top: 9.9%;
   bottom: 0;
   z-index: 2;
   opacity: 0;
@@ -176,6 +176,11 @@ nav .container-secciones .container-angle-right .fa-solid {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .secciones-menu {
+    margin-top: 15.5rem;
+  }
+}
 :root {
   --user-button-circle: rgba(0,0,0,0.025);
   --user-button-cardborder: rgba(255,255,255,0.25);
@@ -524,6 +529,7 @@ body {
   border-radius: 30px;
   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
   border: 5px solid #ffffff;
+  background-size: auto;
 }
 
 .wpac-flex-cards .options .option:not(.active) .shadow {

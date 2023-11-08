@@ -100,8 +100,8 @@ nav .container-secciones .secciones p {
 }
 nav .container-secciones .secciones-menu {
   position: fixed;
+  top: 6rem;
   left: 40rem;
-  top: 9.9%;
   bottom: 0;
   z-index: 2;
   opacity: 0;
@@ -175,6 +175,11 @@ nav .container-secciones .container-angle-right .fa-solid {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+  .secciones-menu {
+    margin-top: 15.5rem;
+  }
+}
 main {
   min-width: 50rem;
 }
@@ -419,6 +424,11 @@ footer .footer .content > div .image {
   background-position: center;
 }
 
+@media (max-width: 472px) {
+  .sticky-container {
+    display: none;
+  }
+}
 @keyframes bubble-size {
   0%, 75% {
     width: var(--size, 4rem);
