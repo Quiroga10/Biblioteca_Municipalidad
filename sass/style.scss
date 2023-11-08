@@ -328,10 +328,23 @@ footer{
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px){
+@media (min-width: 1025px) and (max-width: 1440px){
     main{
-        width: 102rem;
+        width: 142rem;
         margin: 0 auto;
+    }
+    section{
+        .container-cards{
+            justify-content: center;
+        }
+    }
+    footer{
+        min-width: 142rem;
+        .footer{
+            .bubbles{
+                width: 134rem;
+            }
+        }
     }
 }
 

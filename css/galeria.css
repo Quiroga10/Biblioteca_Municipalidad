@@ -184,13 +184,21 @@ nav .container-secciones .container-angle-right .fa-solid {
     min-width: 82rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1440px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   header {
     min-width: 151rem;
     font-size: 1.6rem;
   }
   nav {
     min-width: 151rem;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    min-width: 142rem;
+  }
+  nav {
+    min-width: 142rem;
   }
 }
 @media (min-width: 320px) and (max-width: 2560px) {
