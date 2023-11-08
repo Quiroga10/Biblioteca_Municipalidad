@@ -176,7 +176,7 @@ nav .container-secciones .container-angle-right .fa-solid {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 2560px) {
   .secciones-menu {
     margin-top: 15.5rem;
   }
