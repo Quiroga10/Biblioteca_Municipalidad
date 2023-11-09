@@ -212,6 +212,23 @@ nav{
     }
 }
 
+@media (min-width: 1441px) and (max-width: 1880px){
+    header{
+        min-width: 196rem;
+    }
+    nav{
+        min-width: 196rem;
+    }
+}
+
+@media (min-width: 1881px) and (min-width:2560px){
+    header{
+        min-width: 240rem;
+    }
+    nav{
+        min-width: 240rem;
+    }
+}
 
 @media (min-width: 320px) and (max-width: 2560px) {
     .secciones-menu {

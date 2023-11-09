@@ -348,6 +348,46 @@ footer{
     }
 }
 
+@media (min-width: 1441px) and (max-width: 1880px){
+    main{
+        width: 151rem;
+        margin: 0 auto;
+    }
+    section{
+        .container-cards{
+            justify-content: center;
+        }
+    }
+    footer{
+        min-width: 196rem;
+        .footer{
+            .bubbles{
+                width: 185rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1881px) and (min-width:2560px){
+    main{
+        width: 151rem;
+        margin: 0 auto;
+    }
+    section{
+        .container-cards{
+            justify-content: center;
+        }
+    }
+    footer{
+        width: 253rem;
+        .footer{
+            .bubbles{
+                width: 240rem;
+            }
+        }
+    }
+}
+
 @keyframes bubble-size {
     0%, 75% {
         width:var(--size, 4rem);
