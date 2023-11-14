@@ -84,6 +84,7 @@ header{
 }
 
 nav{
+    position: fixed;
     min-width: 50rem;
     z-index: 1;
     .container-secciones{
@@ -121,10 +122,10 @@ nav{
         }
         .secciones-menu {
             position: fixed;
-            top: 6rem;
+            top: -15rem;
             left: 40rem;
             bottom: 0;
-            z-index: 2;
+            z-index: 3;
             opacity: 0;
             width: 80%;
             background: #fff;
@@ -201,7 +202,7 @@ nav{
 footer{
     min-width: 45rem;
     .footer {
-        z-index: 1;
+        z-index: 2;
         --footer-background:#183153;
         display:grid;
         position: relative;
@@ -227,7 +228,7 @@ footer{
             }
         }
         .content {
-            z-index: 2;
+            z-index: 4;
             display:grid;
             grid-template-columns: 1fr auto;
             grid-gap: 4rem;
@@ -296,22 +297,23 @@ footer{
             flex-direction: column;
             justify-content: center;
             gap: 3rem;
-            height: 30rem;
+            height: 43rem;
             background-color: $color-white;
             color: $color-text;
             .container-nombre-biblioteca{
                 align-items: center;
                 h1{
-                    font-size: 9vw;
+                    font-size: 4vw;
                 }
                 span{
-                    font-size: 4rem;
+                    font-size: 5rem;
                 }
             }
         }
     }
     nav{
         min-width: 82rem;
+        top:-1rem;
     }
     footer{
         min-width: 82rem;
@@ -330,6 +332,14 @@ footer{
         .container-logo{
             background-color: $color-white;
             color: $color-text;
+            height: 43rem;
+            justify-content: center;
+            gap: 20rem;
+            img{
+                width: 21.8rem;
+                height: 21.8rem;
+                margin-top: 7rem;
+            }
             h1{
                 font-size: 6vw;
             }
@@ -337,6 +347,7 @@ footer{
     }
     nav{
         min-width: 151rem;
+        top: -1rem;
     }
     footer{
         min-width: 151rem;
@@ -414,8 +425,8 @@ footer{
     }
 }
 
-// @media (min-width: 320px) and (max-width: 2560px) {
-//     .secciones-menu {
-//         margin-top: 24rem;
-//     }
-// }
+@media (min-width: 320px) and (max-width: 2560px) {
+    .secciones-menu {
+        margin-top: 24rem;
+    }
+}

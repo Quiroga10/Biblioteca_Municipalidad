@@ -7,7 +7,7 @@ main{
         margin:0px;
         position:fixed;
         right:-130px;
-        top:230px;
+        top:410px;
         width:210px;
         z-index: 1100;
         .sticky{
@@ -70,11 +70,12 @@ main{
             justify-content: space-between;
             height: 5rem;
             margin-top: 4rem;
+            gap: 2rem;
             h2{
                 color: $color-orange;
                 text-align: center;
                 font-family: $font-montserrat;
-                font-size: 22px;
+                font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 13.5px; /* 61.364% */
@@ -238,6 +239,11 @@ main{
 @media (min-width: 320px) and (max-width: 767px){
     main{
         width: 82rem;
+        section{
+            .container-titulos{
+                margin-bottom: 5rem;
+            }
+        }
     }
 }
 
@@ -245,6 +251,11 @@ main{
     main{
         width: 151rem;
         margin: 0 auto;
+        section{
+            .container-titulos{
+                margin-bottom: 5rem;
+            }
+        }
     }
     section{
         .container-cards{
