@@ -175,12 +175,104 @@ nav .container-secciones .container-angle-right .fa-solid {
   margin-bottom: 1rem;
 }
 
+footer {
+  min-width: 45rem;
+}
+footer .footer {
+  z-index: 1;
+  --footer-background:#183153;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+  color: #fff;
+}
+footer .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+footer .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+footer .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+footer .footer .content a, footer .footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+footer .footer .content b {
+  color: white;
+}
+footer .footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+footer .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+footer .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+footer .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
   header {
     min-width: 82rem;
   }
   nav {
     min-width: 82rem;
+  }
+  footer {
+    min-width: 82rem;
+  }
+  footer .footer .bubbles {
+    width: 76rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -191,6 +283,12 @@ nav .container-secciones .container-angle-right .fa-solid {
   nav {
     min-width: 151rem;
   }
+  footer {
+    min-width: 151rem;
+  }
+  footer .footer .bubbles {
+    width: 134rem;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   header {
@@ -198,6 +296,12 @@ nav .container-secciones .container-angle-right .fa-solid {
   }
   nav {
     min-width: 142rem;
+  }
+  footer {
+    min-width: 142rem;
+  }
+  footer .footer .bubbles {
+    width: 134rem;
   }
 }
 @media (min-width: 1441px) and (max-width: 1880px) {
@@ -207,6 +311,12 @@ nav .container-secciones .container-angle-right .fa-solid {
   nav {
     min-width: 196rem;
   }
+  footer {
+    min-width: 196rem;
+  }
+  footer .footer .bubbles {
+    width: 185rem;
+  }
 }
 @media (min-width: 1881px) and (min-width: 2560px) {
   header {
@@ -215,6 +325,12 @@ nav .container-secciones .container-angle-right .fa-solid {
   nav {
     min-width: 240rem;
   }
+  footer {
+    width: 253rem;
+  }
+  footer .footer .bubbles {
+    width: 240rem;
+  }
 }
 @media (min-width: 320px) and (max-width: 2560px) {
   .secciones-menu {
@@ -222,4 +338,4 @@ nav .container-secciones .container-angle-right .fa-solid {
   }
 }
 
-/*# sourceMappingURL=header-navbar-comunes.css.map */
+/*# sourceMappingURL=header-navbar-footer.css.map */

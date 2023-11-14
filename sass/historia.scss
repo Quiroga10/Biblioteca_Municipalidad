@@ -1,4 +1,4 @@
-@import './header-navbar-comunes.scss';
+@import './header-navbar-footer.scss';
 main{
     width: 82rem;
     min-height: 45rem;
@@ -65,6 +65,63 @@ main{
             100%{
                 background-position: 0 0;
             }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    main{
+        width: 151rem;
+        min-height: 131rem;
+        article{
+            width: 131rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 151rem;
+            button{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px){
+    main{
+        width: 142rem;
+        article{
+            width: 131rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 142rem;
+        }
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1880px){
+    main{
+        width: 196rem;
+        article{
+            width: 131rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 196rem;
+        }
+    }
+}
+
+@media (min-width: 1881px) and (max-width:2560px){
+    main{
+        width: 256rem;
+        article{
+            width: 138rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 256rem;
         }
     }
 }
