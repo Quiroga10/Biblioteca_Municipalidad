@@ -1,8 +1,9 @@
 @import './header-navbar-comunes.scss';
 main{
+    width: 82rem;
     min-height: 45rem;
     article{
-        width: 50rem;
+        width: 82rem;
         padding: 4rem;
         h1{
             text-align: center;
@@ -10,7 +11,7 @@ main{
             margin-bottom: 4rem;
         }
         p{
-            font-size: 2rem;
+            font-size: 2.2rem;
             text-align: justify;
             margin-bottom: 2rem;
         }
@@ -19,7 +20,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 40vh;
+        width: 82rem;
         button{
             background-color: $color-dark-gray;
             cursor: pointer;
@@ -30,7 +31,6 @@ main{
             font-weight: bold;
             position: relative;
             border-radius: 12px;
-            margin-left: 19rem;
             margin-bottom: 5rem;
             a{
                 text-decoration: none;
