@@ -11,6 +11,11 @@ html {
 
 header {
   min-width: 50rem;
+  background-image: url("../assets/img/local_biblioteca.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
 }
 header .container-logo {
   position: relative;
@@ -18,46 +23,36 @@ header .container-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* The typewriter cursor effect */
+  background-color: #183153;
 }
 header .container-logo img {
   width: 9.8rem;
   height: 9.8rem;
   margin-left: 3rem;
 }
-header .container-logo h1 {
-  width: 30.9rem;
-  height: 6.2rem;
-  color: #000;
+header .container-logo .container-nombre-biblioteca {
+  display: flex;
+  flex-direction: column;
+}
+header .container-logo .container-nombre-biblioteca h1 {
+  width: auto;
+  height: 5.2rem;
   text-align: center;
   font-family: "Jockey One", sans-serif;
-  font-size: 2rem;
+  font-size: 2.8vw;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 1.2rem;
   padding: 2rem;
   overflow: hidden;
-  border-right: 0.1rem solid #183153;
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 1 forwards;
+  transition: all 0.3s ease;
 }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #183153;
-  }
+header .container-logo .container-nombre-biblioteca h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff6200;
 }
 
 nav {
@@ -88,12 +83,12 @@ nav .container-secciones .secciones .fa-solid {
   font-size: 3rem;
 }
 nav .container-secciones .secciones p {
-  width: 11.6rem;
-  height: 2.5rem;
+  width: 14.6rem;
+  height: 4.5rem;
   color: #fff;
   text-align: center;
   font-family: "Jockey One", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -154,9 +149,9 @@ nav .container-secciones .show-menu {
   opacity: 1; /* Cuando se muestra el menú, configurar la opacidad a 1 */
 }
 nav .container-secciones .container-angle-right {
-  width: 3.3rem;
-  height: 1.3rem;
-  margin-top: 4rem;
+  width: 5.3rem;
+  height: 5.3rem;
+  margin-top: 3rem;
   cursor: pointer;
 }
 nav .container-secciones .container-angle-right .fa-solid {
@@ -264,6 +259,24 @@ footer .footer .content > div .image {
 @media (min-width: 320px) and (max-width: 767px) {
   header {
     min-width: 82rem;
+    background-image: none;
+  }
+  header .container-logo {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    height: 30rem;
+    background-color: #fff;
+    color: #000;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 9vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 4rem;
   }
   nav {
     min-width: 82rem;
@@ -278,7 +291,14 @@ footer .footer .content > div .image {
 @media (min-width: 768px) and (max-width: 1024px) {
   header {
     min-width: 151rem;
-    font-size: 1.6rem;
+    background-image: none;
+  }
+  header .container-logo {
+    background-color: #fff;
+    color: #000;
+  }
+  header .container-logo h1 {
+    font-size: 6vw;
   }
   nav {
     min-width: 151rem;
@@ -293,6 +313,11 @@ footer .footer .content > div .image {
 @media (min-width: 1025px) and (max-width: 1440px) {
   header {
     min-width: 142rem;
+    height: 100vh;
+  }
+  header .container-logo {
+    background-color: #fff;
+    color: #000;
   }
   nav {
     min-width: 142rem;
@@ -307,6 +332,11 @@ footer .footer .content > div .image {
 @media (min-width: 1441px) and (max-width: 1880px) {
   header {
     min-width: 196rem;
+    height: 100vh;
+  }
+  header .container-logo {
+    background-color: #fff;
+    color: #000;
   }
   nav {
     min-width: 196rem;
@@ -318,9 +348,14 @@ footer .footer .content > div .image {
     width: 185rem;
   }
 }
-@media (min-width: 1881px) and (min-width: 2560px) {
+@media (min-width: 1881px) and (max-width: 2560px) {
   header {
     min-width: 240rem;
+    height: 100vh;
+  }
+  header .container-logo {
+    background-color: #fff;
+    color: #000;
   }
   nav {
     min-width: 240rem;
@@ -330,11 +365,6 @@ footer .footer .content > div .image {
   }
   footer .footer .bubbles {
     width: 240rem;
-  }
-}
-@media (min-width: 320px) and (max-width: 2560px) {
-  .secciones-menu {
-    margin-top: 15.5rem;
   }
 }
 main {
@@ -513,17 +543,23 @@ main section .container-ubicacion #map {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agregar una sombra alrededor del mapa */
 }
 main section .container-form-contact {
-  max-width: 45rem;
+  max-width: 60rem;
   margin: 0 auto;
   padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   background-color: #f9f9f9;
   margin-bottom: 9rem;
-  font-size: 1.6rem;
 }
 main section .container-form-contact h2 {
-  text-align: center;
+  text-align: left;
+  font-size: 3.6rem;
+  color: #183153;
+  margin-bottom: 1rem;
+}
+main section .container-form-contact p {
+  color: #183153;
+  font-size: 2.3rem;
 }
 main section .container-form-contact form {
   display: flex;
@@ -539,7 +575,11 @@ main section .container-form-contact form input[type=text], main section .contai
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 }
-main section .container-form-contact form input[type=submit] {
+main section .container-form-contact form .container-submit-form {
+  text-align: right;
+}
+main section .container-form-contact form .container-submit-form input[type=submit] {
+  width: 10rem;
   background-color: #183153;
   color: white;
   padding: 1rem 1.5rem;
@@ -548,7 +588,7 @@ main section .container-form-contact form input[type=submit] {
   cursor: pointer;
   font-size: 2rem;
 }
-main section .container-form-contact form input[type=submit]:hover {
+main section .container-form-contact form .container-submit-form input[type=submit]:hover {
   background-color: #284e83;
 }
 
