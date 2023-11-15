@@ -11,10 +11,6 @@ html {
 
 header {
   min-width: 50rem;
-  background-image: url("../assets/img/local_biblioteca.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
   color: #fff;
 }
 header .container-logo {
@@ -28,7 +24,6 @@ header .container-logo {
 header .container-logo img {
   width: 9.8rem;
   height: 9.8rem;
-  margin-left: 3rem;
 }
 header .container-logo .container-nombre-biblioteca {
   display: flex;
@@ -300,15 +295,23 @@ footer .footer .content > div .image {
     color: #000;
     height: 43rem;
     justify-content: center;
-    gap: 20rem;
+    gap: 8rem;
   }
   header .container-logo img {
     width: 21.8rem;
     height: 21.8rem;
-    margin-top: 7rem;
+    margin: 0 auto;
+    margin-top: 4rem;
   }
-  header .container-logo h1 {
-    font-size: 6vw;
+  header .container-logo .container-nombre-biblioteca {
+    align-items: center;
+    margin: 0 auto;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 4vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 6rem;
   }
   nav {
     min-width: 151rem;
@@ -324,14 +327,28 @@ footer .footer .content > div .image {
 @media (min-width: 1025px) and (max-width: 1440px) {
   header {
     min-width: 142rem;
-    height: 100vh;
+    height: 40vh;
   }
   header .container-logo {
+    justify-content: center;
     background-color: #fff;
     color: #000;
+    gap: 3rem;
+    height: 28rem;
+    top: 4rem;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 3vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 4rem;
   }
   nav {
-    min-width: 142rem;
+    min-width: 144rem;
+    top: -1rem;
   }
   footer {
     min-width: 142rem;
@@ -343,14 +360,28 @@ footer .footer .content > div .image {
 @media (min-width: 1441px) and (max-width: 1880px) {
   header {
     min-width: 196rem;
-    height: 100vh;
+    height: 40vh;
   }
   header .container-logo {
+    justify-content: center;
     background-color: #fff;
     color: #000;
+    gap: 3rem;
+    height: 28rem;
+    top: 4rem;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 1.5vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 5rem;
   }
   nav {
     min-width: 196rem;
+    top: -1rem;
   }
   footer {
     min-width: 196rem;
@@ -362,14 +393,28 @@ footer .footer .content > div .image {
 @media (min-width: 1881px) and (max-width: 2560px) {
   header {
     min-width: 240rem;
-    height: 100vh;
+    height: 30vh;
   }
   header .container-logo {
+    justify-content: center;
     background-color: #fff;
     color: #000;
+    gap: 3rem;
+    height: 28rem;
+    top: 9rem;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 1.5vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 5rem;
   }
   nav {
-    min-width: 240rem;
+    min-width: 256rem;
+    top: -1rem;
   }
   footer {
     width: 253rem;
@@ -576,13 +621,15 @@ main section .container-form-contact h2 {
 }
 main section .container-form-contact p {
   color: #183153;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
 }
 main section .container-form-contact form {
   display: flex;
   flex-direction: column;
 }
 main section .container-form-contact form label {
+  font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -625,6 +672,12 @@ main section .container-form-contact form .container-submit-form input[type=subm
   main section .container-titulos {
     margin-bottom: 5rem;
   }
+  main section .container-titulos h2 {
+    font-size: 3vw;
+  }
+  main section .container-titulos h3 {
+    font-size: 2vw;
+  }
   section .container-cards {
     justify-content: center;
   }
@@ -633,6 +686,9 @@ main section .container-form-contact form .container-submit-form input[type=subm
   main {
     width: 142rem;
     margin: 0 auto;
+  }
+  main section .container-titulos {
+    margin-bottom: 5rem;
   }
   section .container-cards {
     justify-content: center;
@@ -643,6 +699,9 @@ main section .container-form-contact form .container-submit-form input[type=subm
     width: 151rem;
     margin: 0 auto;
   }
+  main section .container-titulos {
+    margin-bottom: 5rem;
+  }
   section .container-cards {
     justify-content: center;
   }
@@ -651,6 +710,9 @@ main section .container-form-contact form .container-submit-form input[type=subm
   main {
     width: 151rem;
     margin: 0 auto;
+  }
+  main section .container-titulos {
+    margin-bottom: 5rem;
   }
   section .container-cards {
     justify-content: center;

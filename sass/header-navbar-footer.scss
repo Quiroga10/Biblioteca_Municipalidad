@@ -23,10 +23,6 @@ $color-shadow-cards: rgba(0, 0, 0, 0.08);
 
 header{
     min-width: 50rem;
-    background-image: url('../assets/img/local_biblioteca.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     color: $color-white;
     .container-logo{
         position: relative;
@@ -38,7 +34,7 @@ header{
         img{
             width: 9.8rem;
             height: 9.8rem;
-            margin-left: 3rem;
+            // margin-left: 3rem;
         }
         .container-nombre-biblioteca{
             display: flex;
@@ -288,7 +284,6 @@ footer{
 }
 
 
-
 @media (min-width: 320px) and (max-width: 767px){
     header{
         min-width: 82rem;
@@ -334,14 +329,22 @@ footer{
             color: $color-text;
             height: 43rem;
             justify-content: center;
-            gap: 20rem;
+            gap: 8rem;
             img{
                 width: 21.8rem;
                 height: 21.8rem;
-                margin-top: 7rem;
+                margin: 0 auto;
+                margin-top: 4rem;
             }
-            h1{
-                font-size: 6vw;
+            .container-nombre-biblioteca{
+                align-items: center;
+                margin: 0 auto;
+                h1{
+                    font-size: 4vw;
+                }
+                span{
+                    font-size: 6rem;
+                }
             }
         }
     }
@@ -362,14 +365,28 @@ footer{
 @media (min-width: 1025px) and (max-width: 1440px){
     header{
         min-width: 142rem;
-        height: 100vh;
+        height: 40vh;
         .container-logo{
+            justify-content: center;
             background-color: $color-white;
             color: $color-text;
+            gap: 3rem;
+            height: 28rem;
+            top: 4rem;
+            .container-nombre-biblioteca{
+                align-items: center;
+                h1{
+                    font-size: 3vw;
+                }
+                span{
+                    font-size: 4rem;
+                }
+            }
         }
     }
     nav{
-        min-width: 142rem;
+        min-width: 144rem;
+        top: -1rem;
     }
     footer{
         min-width: 142rem;
@@ -384,14 +401,28 @@ footer{
 @media (min-width: 1441px) and (max-width: 1880px){
     header{
         min-width: 196rem;
-        height: 100vh;
+        height: 40vh;
         .container-logo{
+            justify-content: center;
             background-color: $color-white;
             color: $color-text;
+            gap: 3rem;
+            height: 28rem;
+            top: 4rem;
+            .container-nombre-biblioteca{
+                align-items: center;
+                h1{
+                    font-size: 1.5vw;
+                }
+                span{
+                    font-size: 5rem;
+                }
+            }
         }
     }
     nav{
         min-width: 196rem;
+        top: -1rem;
     }
     footer{
         min-width: 196rem;
@@ -406,14 +437,28 @@ footer{
 @media (min-width: 1881px) and (max-width:2560px){
     header{
         min-width: 240rem;
-        height: 100vh;
+        height: 30vh;
         .container-logo{
+            justify-content: center;
             background-color: $color-white;
             color: $color-text;
+            gap: 3rem;
+            height: 28rem;
+            top: 9rem;
+            .container-nombre-biblioteca{
+                align-items: center;
+                h1{
+                    font-size: 1.5vw;
+                }
+                span{
+                    font-size: 5rem;
+                }
+            }
         }
     }
     nav{
-        min-width: 240rem;
+        min-width: 256rem;
+        top: -1rem;
     }
     footer{
         width: 253rem;
