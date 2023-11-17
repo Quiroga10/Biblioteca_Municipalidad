@@ -6,8 +6,8 @@ main{
         padding:0px;
         margin:0px;
         position:fixed;
-        right:-130px;
-        top:410px;
+        right:-177px;
+        top:132px;
         width:210px;
         z-index: 1100;
         .sticky{
@@ -100,6 +100,7 @@ main{
             scrollbar-width: none;
             padding: 1.5rem 0;
             margin-bottom: 4rem;
+            justify-content: center;
             .cards{
                 position: relative;
                 flex: 0 0 30.9rem;
@@ -244,6 +245,11 @@ main{
         section{
             .container-titulos{
                 margin-bottom: 5rem;
+            }
+        }
+        section{
+            .container-cards{
+                justify-content: flex-start;
             }
         }
     }
