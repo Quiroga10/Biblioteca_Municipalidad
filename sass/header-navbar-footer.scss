@@ -89,9 +89,9 @@ header{
         .generadorSvg{
             width: 100%;
             height: 100%;
-            .colorSvg{
+            .colorOnda_uno, .colorOnda_dos{
                 stroke: none;
-                fill: #183153;
+                fill: $color-white;
             }
         }
     }
@@ -308,7 +308,7 @@ footer{
             flex-direction: column;
             justify-content: center;
             gap: 3rem;
-            height: 60rem;
+            height: 59rem;
             background-color: $color-white;
             .container-nombre-biblioteca{
                 align-items: center;
@@ -324,6 +324,11 @@ footer{
             width: 82rem;
             height: 15rem;
             top: 45rem;
+            .generadorSvg{
+                .colorOnda_dos{
+                    display: none;
+                }
+            }
         }
     }
     nav{
@@ -346,7 +351,7 @@ footer{
         .container-logo{
             background-color: $color-white;
             color: $color-text;
-            height: 82rem;
+            height: 81rem;
             justify-content: center;
             img{
                 width: 21.8rem;
@@ -369,6 +374,11 @@ footer{
             width: 151rem;
             height: 15rem;
             top: 67rem;
+            .generadorSvg{
+                .colorOnda_dos{
+                    display: none;
+                }
+            }
         }
     }
     nav{
@@ -387,14 +397,14 @@ footer{
 
 @media (min-width: 1025px) and (max-width: 1440px){
     header{
-        min-width: 142rem;
-        height: 40vh;
+        min-width: 144rem;
+        height: 100vh;
         .container-logo{
             justify-content: center;
             background-color: $color-white;
             color: $color-text;
             gap: 3rem;
-            height: 28rem;
+            height: 79.2rem;
             top: 4rem;
             .container-nombre-biblioteca{
                 align-items: center;
@@ -403,6 +413,19 @@ footer{
                 }
                 span{
                     font-size: 4rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 144rem;
+            height: 15rem;
+            top: 68.3rem;
+            .generadorSvg{
+                .colorOnda_uno{
+                    display: none;
+                }
+                .colorOnda_dos{
+                    fill: $color-white;
                 }
             }
         }
@@ -424,14 +447,15 @@ footer{
 @media (min-width: 1441px) and (max-width: 1880px){
     header{
         min-width: 196rem;
-        height: 40vh;
+        height: 100vh;
         .container-logo{
             justify-content: center;
-            background-color: $color-white;
-            color: $color-text;
+            background-color: red;
             gap: 3rem;
-            height: 28rem;
-            top: 4rem;
+            width: 196rem;
+            height: 78.4rem;
+            top: 8.3rem;
+            background-size: cover;
             .container-nombre-biblioteca{
                 align-items: center;
                 h1{
@@ -439,6 +463,19 @@ footer{
                 }
                 span{
                     font-size: 5rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 196rem;
+            height: 15rem;
+            top: 71.8rem;
+            .generadorSvg{
+                .colorOnda_uno{
+                    display: none;
+                }
+                .colorOnda_dos{
+                    fill: $color-white;
                 }
             }
         }

@@ -63,9 +63,9 @@ header .container-generadorSvg .generadorSvg {
   width: 100%;
   height: 100%;
 }
-header .container-generadorSvg .generadorSvg .colorSvg {
+header .container-generadorSvg .generadorSvg .colorOnda_uno, header .container-generadorSvg .generadorSvg .colorOnda_dos {
   stroke: none;
-  fill: #183153;
+  fill: #fff;
 }
 
 nav {
@@ -278,7 +278,7 @@ footer .footer .content > div .image {
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-    height: 60rem;
+    height: 59rem;
     background-color: #fff;
   }
   header .container-logo .container-nombre-biblioteca {
@@ -294,6 +294,9 @@ footer .footer .content > div .image {
     width: 82rem;
     height: 15rem;
     top: 45rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    display: none;
   }
   nav {
     min-width: 82rem;
@@ -313,7 +316,7 @@ footer .footer .content > div .image {
   header .container-logo {
     background-color: #fff;
     color: #000;
-    height: 82rem;
+    height: 81rem;
     justify-content: center;
   }
   header .container-logo img {
@@ -337,6 +340,9 @@ footer .footer .content > div .image {
     height: 15rem;
     top: 67rem;
   }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    display: none;
+  }
   nav {
     min-width: 151rem;
     top: -1rem;
@@ -350,15 +356,15 @@ footer .footer .content > div .image {
 }
 @media (min-width: 1025px) and (max-width: 1440px) {
   header {
-    min-width: 142rem;
-    height: 40vh;
+    min-width: 144rem;
+    height: 100vh;
   }
   header .container-logo {
     justify-content: center;
     background-color: #fff;
     color: #000;
     gap: 3rem;
-    height: 28rem;
+    height: 79.2rem;
     top: 4rem;
   }
   header .container-logo .container-nombre-biblioteca {
@@ -369,6 +375,17 @@ footer .footer .content > div .image {
   }
   header .container-logo .container-nombre-biblioteca span {
     font-size: 4rem;
+  }
+  header .container-generadorSvg {
+    width: 144rem;
+    height: 15rem;
+    top: 68.3rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_uno {
+    display: none;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    fill: #fff;
   }
   nav {
     min-width: 144rem;
@@ -384,15 +401,16 @@ footer .footer .content > div .image {
 @media (min-width: 1441px) and (max-width: 1880px) {
   header {
     min-width: 196rem;
-    height: 40vh;
+    height: 100vh;
   }
   header .container-logo {
     justify-content: center;
-    background-color: #fff;
-    color: #000;
+    background-color: red;
     gap: 3rem;
-    height: 28rem;
-    top: 4rem;
+    width: 196rem;
+    height: 78.4rem;
+    top: 8.3rem;
+    background-size: cover;
   }
   header .container-logo .container-nombre-biblioteca {
     align-items: center;
@@ -402,6 +420,17 @@ footer .footer .content > div .image {
   }
   header .container-logo .container-nombre-biblioteca span {
     font-size: 5rem;
+  }
+  header .container-generadorSvg {
+    width: 196rem;
+    height: 15rem;
+    top: 71.8rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_uno {
+    display: none;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    fill: #fff;
   }
   nav {
     min-width: 196rem;
