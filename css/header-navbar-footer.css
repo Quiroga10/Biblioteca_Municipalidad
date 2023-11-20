@@ -444,16 +444,18 @@ footer .footer .content > div .image {
 }
 @media (min-width: 1881px) and (max-width: 2560px) {
   header {
-    min-width: 240rem;
-    height: 30vh;
+    min-width: 190rem;
+    height: 100vh;
   }
   header .container-logo {
     justify-content: center;
     background-color: #fff;
     color: #000;
     gap: 3rem;
-    height: 28rem;
-    top: 9rem;
+    width: 190rem;
+    height: 83.8rem;
+    top: 8rem;
+    background-size: cover;
   }
   header .container-logo .container-nombre-biblioteca {
     align-items: center;
@@ -464,15 +466,26 @@ footer .footer .content > div .image {
   header .container-logo .container-nombre-biblioteca span {
     font-size: 5rem;
   }
+  header .container-generadorSvg {
+    width: 190rem;
+    height: 15rem;
+    top: 76.8rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_uno {
+    display: none;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    fill: #fff;
+  }
   nav {
-    min-width: 256rem;
+    width: 190rem;
     top: -1rem;
   }
   footer {
-    width: 253rem;
+    width: 190rem;
   }
   footer .footer .bubbles {
-    width: 240rem;
+    width: 172rem;
   }
 }
 @media (min-width: 320px) and (max-width: 2560px) {
