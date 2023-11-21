@@ -540,11 +540,11 @@ footer .footer .content > div .image {
   }
 }
 main {
-  width: 82rem;
+  width: 90rem;
   min-height: 45rem;
 }
 main article {
-  width: 82rem;
+  width: 90rem;
   padding: 4rem;
 }
 main article h1 {
@@ -561,7 +561,7 @@ main .container-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 82rem;
+  width: 90rem;
 }
 main .container-button button {
   background-color: #353430;
@@ -605,6 +605,10 @@ main .container-button button::before {
   }
 }
 
+footer {
+  width: 90rem;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   main {
     width: 151rem;
@@ -645,9 +649,12 @@ main .container-button button::before {
     width: 196rem;
   }
 }
-@media (min-width: 1881px) and (max-width: 2560px) {
+@media (min-width: 1881px) and (max-width: 1920px) {
+  header {
+    display: none;
+  }
   main {
-    width: 256rem;
+    width: 190rem;
   }
   main article {
     width: 138rem;
@@ -655,6 +662,9 @@ main .container-button button::before {
   }
   main .container-button {
     width: 256rem;
+  }
+  footer {
+    width: 190rem;
   }
 }
 

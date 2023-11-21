@@ -1,9 +1,9 @@
 @import './header-navbar-footer.scss';
 main{
-    width: 82rem;
+    width: 90rem;
     min-height: 45rem;
     article{
-        width: 82rem;
+        width: 90rem;
         padding: 4rem;
         h1{
             text-align: center;
@@ -20,7 +20,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 82rem;
+        width: 90rem;
         button{
             background-color: $color-dark-gray;
             cursor: pointer;
@@ -68,7 +68,9 @@ main{
         }
     }
 }
-
+footer{
+    width: 90rem;
+}
 
 @media (min-width: 768px) and (max-width: 1024px){
     main{
@@ -113,9 +115,12 @@ main{
     }
 }
 
-@media (min-width: 1881px) and (max-width:2560px){
+@media (min-width: 1881px) and (max-width:1920px){
+    header{
+        display: none;
+    }
     main{
-        width: 256rem;
+        width: 190rem;
         article{
             width: 138rem;
             margin: 0 auto;
@@ -123,5 +128,8 @@ main{
         .container-button{
             width: 256rem;
         }
+    }
+    footer{
+        width: 190rem;
     }
 }
