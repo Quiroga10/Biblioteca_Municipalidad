@@ -775,7 +775,7 @@ main section .container-form-contact form .container-submit-form input[type=subm
     justify-content: center;
   }
 }
-@media (min-width: 1881px) and (min-width: 2560px) {
+@media screen and (min-width: 1881px) {
   main {
     width: 151rem;
     margin: 0 auto;
