@@ -239,7 +239,7 @@ main{
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px){
+@media(max-width: 767px){
     main{
         width: 82rem;
         section{
@@ -313,9 +313,9 @@ main{
     }
 }
 
-@media (min-width: 1881px) and (min-width:2560px){
+@media (min-width: 1881px) and (max-width:2561px){
     main{
-        width: 151rem;
+        width: 256rem;
         margin: 0 auto;
         section{
             .container-titulos{
@@ -330,3 +330,8 @@ main{
     }
 }
 
+@media (min-width: 1920px){
+    main{
+        width: 150rem;
+    }
+}

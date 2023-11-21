@@ -159,7 +159,7 @@ nav .container-secciones .secciones-menu .fa-regular {
 nav .container-secciones .show-menu {
   display: flex;
   justify-content: space-between;
-  opacity: 1; /* Cuando se muestra el menú, configurar la opacidad a 1 */
+  opacity: 1;
 }
 nav .container-secciones .container-angle-right {
   width: 5.3rem;
@@ -269,7 +269,7 @@ footer .footer .content > div .image {
     bottom: var(--distance, 10rem);
   }
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   header {
     min-width: 82rem;
   }
@@ -442,9 +442,9 @@ footer .footer .content > div .image {
     width: 185rem;
   }
 }
-@media screen and (min-width: 2561px) {
+@media (min-width: 1881px) and (width: 2561px) {
   header {
-    min-width: 190rem;
+    width: 256rem;
     height: 100vh;
   }
   header .container-logo {
@@ -452,8 +452,8 @@ footer .footer .content > div .image {
     background-color: #fff;
     color: #000;
     gap: 3rem;
-    width: 190rem;
-    height: 83.8rem;
+    width: 256rem;
+    height: 110.8rem;
     top: 8rem;
     background-size: cover;
   }
@@ -467,9 +467,9 @@ footer .footer .content > div .image {
     font-size: 5rem;
   }
   header .container-generadorSvg {
-    width: 190rem;
+    width: 256rem;
     height: 15rem;
-    top: 76.8rem;
+    top: 103.9rem;
   }
   header .container-generadorSvg .generadorSvg .colorOnda_uno {
     display: none;
@@ -478,6 +478,42 @@ footer .footer .content > div .image {
     fill: #fff;
   }
   nav {
+    width: 256rem;
+    top: -1rem;
+  }
+  footer {
+    width: 256rem;
+  }
+  footer .footer .bubbles {
+    width: 172rem;
+  }
+}
+@media (min-width: 1920px) {
+  header {
+    width: 190rem;
+    height: 100vh;
+  }
+  header .container-logo {
+    justify-content: center;
+    background-color: #fff;
+    color: #000;
+    gap: 3rem;
+    width: 190rem;
+    height: 110.8rem;
+    top: 8rem;
+    background-size: cover;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 1.5vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 5rem;
+  }
+  nav {
+    overflow-x: hidden;
     width: 190rem;
     top: -1rem;
   }
@@ -722,7 +758,7 @@ main section .container-form-contact form .container-submit-form input[type=subm
   background-color: #284e83;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 767px) {
   main {
     width: 82rem;
   }
@@ -775,9 +811,9 @@ main section .container-form-contact form .container-submit-form input[type=subm
     justify-content: center;
   }
 }
-@media (min-width: 1881px) and (min-width: 2560px) {
+@media (min-width: 1881px) and (max-width: 2561px) {
   main {
-    width: 151rem;
+    width: 256rem;
     margin: 0 auto;
   }
   main section .container-titulos {
@@ -785,6 +821,11 @@ main section .container-form-contact form .container-submit-form input[type=subm
   }
   section .container-cards {
     justify-content: center;
+  }
+}
+@media (min-width: 1920px) {
+  main {
+    width: 150rem;
   }
 }
 

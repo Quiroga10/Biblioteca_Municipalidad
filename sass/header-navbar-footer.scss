@@ -40,7 +40,6 @@ header{
             height: 9.8rem;
             background-color: $color-white;
             border-radius: 11rem;
-            // margin-left: 3rem;
         }
         .container-nombre-biblioteca{
             display: flex;
@@ -56,29 +55,15 @@ header{
                 line-height: 1.2rem;
                 padding: 2rem;
                 overflow: hidden;
-                // border-right: .1rem solid #183153; 
                 white-space: nowrap; 
                 margin: 0 auto; 
                 letter-spacing: .15em;
                 transition: all 0.3s ease;
-                // animation: 
-                //     typing 3.5s steps(40, end),
-                //     blink-caret .75s step-end 1 forwards;
             }
             h1:hover{
                 transform: translate3d(0, -10px, 22px);
                 color: #ff6200;
             }
-            // @keyframes typing {
-            //     from { width: 0 }
-            //     to { width: 100% }
-            // }
-            
-            // /* The typewriter cursor effect */
-            // @keyframes blink-caret {
-            //     from, to { border-color: transparent }
-            //     50% { border-color: #183153; }
-            // }
         }
         
 
@@ -187,7 +172,7 @@ nav{
         .show-menu {
             display: flex;
             justify-content: space-between;
-            opacity: 1; /* Cuando se muestra el menú, configurar la opacidad a 1 */
+            opacity: 1;
         }
         .container-angle-right{
             width: 5.3rem;
@@ -301,7 +286,7 @@ footer{
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px){
+@media(max-width: 767px){
     header{
         min-width: 82rem;
         .container-logo{
@@ -494,17 +479,17 @@ footer{
     }
 }
 
-@media screen and (min-width:2561px){
+@media (min-width: 1881px) and (width:2561px){
     header{
-        min-width: 190rem;
+        width: 256rem;
         height: 100vh;
         .container-logo{
             justify-content: center;
             background-color: $color-white;
             color: $color-text;
             gap: 3rem;
-            width: 190rem;
-            height: 83.8rem;
+            width: 256rem;
+            height: 110.8rem;
             top: 8rem;
             background-size: cover;
             .container-nombre-biblioteca{
@@ -518,9 +503,9 @@ footer{
             }
         }
         .container-generadorSvg{
-            width: 190rem;
+            width: 256rem;
             height: 15rem;
-            top: 76.8rem;
+            top: 103.9rem;
             .generadorSvg{
                 .colorOnda_uno{
                     display: none;
@@ -532,6 +517,45 @@ footer{
         }
     }
     nav{
+        width: 256rem;
+        top: -1rem;
+    }
+    footer{
+        width: 256rem;
+        .footer{
+            .bubbles{
+                width: 172rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 1920px){
+    header{
+        width: 190rem;
+        height: 100vh;
+        .container-logo{
+            justify-content: center;
+            background-color: $color-white;
+            color: $color-text;
+            gap: 3rem;
+            width: 190rem;
+            height: 110.8rem;
+            top: 8rem;
+            background-size: cover;
+            .container-nombre-biblioteca{
+                align-items: center;
+                h1{
+                    font-size: 1.5vw;
+                }
+                span{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+    nav{
+        overflow-x: hidden;
         width: 190rem;
         top: -1rem;
     }
