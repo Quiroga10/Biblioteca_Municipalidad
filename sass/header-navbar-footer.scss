@@ -40,7 +40,6 @@ header{
             height: 9.8rem;
             background-color: $color-white;
             border-radius: 11rem;
-            // margin-left: 3rem;
         }
         .container-nombre-biblioteca{
             display: flex;
@@ -61,24 +60,11 @@ header{
                 margin: 0 auto; 
                 letter-spacing: .15em;
                 transition: all 0.3s ease;
-                // animation: 
-                //     typing 3.5s steps(40, end),
-                //     blink-caret .75s step-end 1 forwards;
             }
             h1:hover{
                 transform: translate3d(0, -10px, 22px);
                 color: #ff6200;
             }
-            // @keyframes typing {
-            //     from { width: 0 }
-            //     to { width: 100% }
-            // }
-            
-            // /* The typewriter cursor effect */
-            // @keyframes blink-caret {
-            //     from, to { border-color: transparent }
-            //     50% { border-color: #183153; }
-            // }
         }
         
 
@@ -435,7 +421,7 @@ footer{
         top: -1rem;
     }
     footer{
-        min-width: 144rem;
+        min-width: 142rem;
         .footer{
             .bubbles{
                 width: 134rem;
@@ -494,7 +480,7 @@ footer{
     }
 }
 
-@media (min-width: 1881px) and (max-width:2560px){
+@media screen and (min-width: 1881px){
     header{
         min-width: 190rem;
         height: 100vh;
@@ -539,7 +525,7 @@ footer{
         width: 190rem;
         .footer{
             .bubbles{
-                width: 172rem;
+                width: 180rem;
             }
         }
     }
