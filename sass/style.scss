@@ -280,7 +280,7 @@ main{
 
 @media (min-width: 1025px) and (max-width: 1440px){
     main{
-        width: 144rem;
+        width: 142rem;
         margin: 0 auto;
         section{
             .container-titulos{
@@ -298,7 +298,7 @@ main{
 
 @media (min-width: 1441px) and (max-width: 1880px){
     main{
-        width: 196rem;
+        width: 151rem;
         margin: 0 auto;
         section{
             .container-titulos{
@@ -313,7 +313,7 @@ main{
     }
 }
 
-@media screen and (min-width: 1881px){
+@media (min-width: 1881px) and (min-width:2560px){
     main{
         width: 151rem;
         margin: 0 auto;

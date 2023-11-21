@@ -443,7 +443,7 @@ footer .footer .content > div .image {
     width: 185rem;
   }
 }
-@media screen and (min-width: 1881px) {
+@media screen and (min-width: 2561px) {
   header {
     min-width: 190rem;
     height: 100vh;
@@ -486,7 +486,7 @@ footer .footer .content > div .image {
     width: 190rem;
   }
   footer .footer .bubbles {
-    width: 180rem;
+    width: 172rem;
   }
 }
 @media (min-width: 320px) and (max-width: 2560px) {
