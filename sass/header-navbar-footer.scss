@@ -540,7 +540,7 @@ footer{
             color: $color-text;
             gap: 3rem;
             width: 190rem;
-            height: 110.8rem;
+            height: 83.9rem;
             top: 8rem;
             background-size: cover;
             .container-nombre-biblioteca{
@@ -550,6 +550,19 @@ footer{
                 }
                 span{
                     font-size: 5rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 190rem;
+            height: 15rem;
+            top: 77rem;
+            .generadorSvg{
+                .colorOnda_uno{
+                    display: none;
+                }
+                .colorOnda_dos{
+                    fill: $color-white;
                 }
             }
         }

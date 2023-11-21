@@ -499,7 +499,7 @@ footer .footer .content > div .image {
     color: #000;
     gap: 3rem;
     width: 190rem;
-    height: 110.8rem;
+    height: 83.9rem;
     top: 8rem;
     background-size: cover;
   }
@@ -511,6 +511,17 @@ footer .footer .content > div .image {
   }
   header .container-logo .container-nombre-biblioteca span {
     font-size: 5rem;
+  }
+  header .container-generadorSvg {
+    width: 190rem;
+    height: 15rem;
+    top: 77rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_uno {
+    display: none;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    fill: #fff;
   }
   nav {
     overflow-x: hidden;
