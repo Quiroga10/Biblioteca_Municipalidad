@@ -1,7 +1,7 @@
 @import './header-navbar-footer.scss';
 
 main{
-    min-width: 50rem;
+    width: 90rem;
     .sticky-container{
         padding:0px;
         margin:0px;
@@ -298,7 +298,7 @@ main{
 
 @media (min-width: 1441px) and (max-width: 1880px){
     main{
-        width: 151rem;
+        width: 196rem;
         margin: 0 auto;
         section{
             .container-titulos{
@@ -313,25 +313,21 @@ main{
     }
 }
 
-@media (min-width: 1881px) and (max-width:2561px){
+@media (min-width: 1881px) and (max-width:1920px){
     main{
-        width: 256rem;
+        width: 190rem;
         margin: 0 auto;
         section{
             .container-titulos{
                 margin-bottom: 5rem;
+                margin-top: 45rem;
             }
-        }
-    }
-    section{
-        .container-cards{
-            justify-content: center;
         }
     }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1921px){
     main{
-        width: 150rem;
+        width: 190rem;
     }
 }

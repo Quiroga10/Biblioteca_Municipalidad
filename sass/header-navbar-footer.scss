@@ -23,7 +23,7 @@ $color-dark-gray: #353430;
 $color-shadow-cards: rgba(0, 0, 0, 0.08);
 
 header{
-    min-width: 50rem;
+    width: 90rem;
     color: $color-white;
     .container-logo{
         position: relative;
@@ -84,7 +84,7 @@ header{
 
 nav{
     position: fixed;
-    min-width: 50rem;
+    width: 90rem;
     z-index: 1;
     .container-secciones{
         background-color: $color-background-nav;
@@ -479,16 +479,16 @@ footer{
     }
 }
 
-@media (min-width: 1881px) and (width:2561px){
+@media (min-width: 1881px) and (max-width:1920px){
     header{
-        width: 256rem;
+        width: 190rem;
         height: 100vh;
         .container-logo{
             justify-content: center;
             background-color: $color-white;
             color: $color-text;
             gap: 3rem;
-            width: 256rem;
+            width: 190rem;
             height: 110.8rem;
             top: 8rem;
             background-size: cover;
@@ -503,7 +503,7 @@ footer{
             }
         }
         .container-generadorSvg{
-            width: 256rem;
+            width: 190rem;
             height: 15rem;
             top: 103.9rem;
             .generadorSvg{
@@ -517,11 +517,11 @@ footer{
         }
     }
     nav{
-        width: 256rem;
+        width: 190rem;
         top: -1rem;
     }
     footer{
-        width: 256rem;
+        width: 190rem;
         .footer{
             .bubbles{
                 width: 172rem;
@@ -530,7 +530,7 @@ footer{
     }
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1921px){
     header{
         width: 190rem;
         height: 100vh;

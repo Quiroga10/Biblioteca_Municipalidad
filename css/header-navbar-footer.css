@@ -9,7 +9,7 @@ html {
 }
 
 header {
-  min-width: 50rem;
+  width: 90rem;
   color: #fff;
 }
 header .container-logo {
@@ -68,7 +68,7 @@ header .container-generadorSvg .generadorSvg .colorOnda_uno, header .container-g
 
 nav {
   position: fixed;
-  min-width: 50rem;
+  width: 90rem;
   z-index: 1;
 }
 nav .container-secciones {
@@ -441,9 +441,9 @@ footer .footer .content > div .image {
     width: 185rem;
   }
 }
-@media (min-width: 1881px) and (width: 2561px) {
+@media (min-width: 1881px) and (max-width: 1920px) {
   header {
-    width: 256rem;
+    width: 190rem;
     height: 100vh;
   }
   header .container-logo {
@@ -451,7 +451,7 @@ footer .footer .content > div .image {
     background-color: #fff;
     color: #000;
     gap: 3rem;
-    width: 256rem;
+    width: 190rem;
     height: 110.8rem;
     top: 8rem;
     background-size: cover;
@@ -466,7 +466,7 @@ footer .footer .content > div .image {
     font-size: 5rem;
   }
   header .container-generadorSvg {
-    width: 256rem;
+    width: 190rem;
     height: 15rem;
     top: 103.9rem;
   }
@@ -477,17 +477,17 @@ footer .footer .content > div .image {
     fill: #fff;
   }
   nav {
-    width: 256rem;
+    width: 190rem;
     top: -1rem;
   }
   footer {
-    width: 256rem;
+    width: 190rem;
   }
   footer .footer .bubbles {
     width: 172rem;
   }
 }
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
   header {
     width: 190rem;
     height: 100vh;
