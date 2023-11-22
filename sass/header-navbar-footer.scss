@@ -20,34 +20,45 @@ $color-icon: #B9B2B2;
 $color-white: #fff;
 $color-orange: #FD9158;
 $color-dark-gray: #353430;
-$color-shadow-cards: rgba(0, 0, 0, 0.08);
+$color-shadow-cards: rgb(6 5 5);
 
 header{
-    width: 90rem;
+    min-width: 37.5rem;
+    max-width: 31rem;
+    height: 46vh;
+    margin-top: -2rem;
     color: $color-white;
     .container-logo{
         position: relative;
-        height: 12rem;
+        width: 37.5rem;
+        height: 37rem;
+        margin-top: 9.7rem;
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
         align-items: center;
         background-color: $color-background-nav;
         background-image: url('https://images.pexels.com/photos/19036675/pexels-photo-19036675/free-photo-of-ciudad-punto-de-referencia-libros-viaje.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: cover;
         img{
             width: 9.8rem;
             height: 9.8rem;
+            margin: 0 auto;
             background-color: $color-white;
             border-radius: 11rem;
         }
         .container-nombre-biblioteca{
+            width: 33rem;
             display: flex;
             flex-direction: column;
+            align-items: center;
             color: #fffefb;
             h1{
                 width: auto;
                 height: 5.2rem;
+                font-size: 1rem;
                 text-align: center;
                 font-family: $font-jockey-one;
                 font-style: normal;
@@ -64,6 +75,9 @@ header{
                 transform: translate3d(0, -10px, 22px);
                 color: #ff6200;
             }
+            span{
+                font-size: 3rem;
+            }
         }
         
 
@@ -71,12 +85,18 @@ header{
     .container-generadorSvg{
         position: absolute;
         overflow: hidden;
+        width: 37.5rem;
+        height: 9rem;
+        top: 36.8rem;
         .generadorSvg{
-            width: 100%;
-            height: 100%;
+            width: 37.5rem;
+            height: 10rem;
             .colorOnda_uno, .colorOnda_dos{
                 stroke: none;
                 fill: $color-white;
+            }
+            .colorOnda_uno{
+                display: none;
             }
         }
     }
@@ -84,14 +104,15 @@ header{
 
 nav{
     position: fixed;
-    width: 90rem;
+    min-width: 37.5rem;
+    max-width: 31rem;
+    top: -1rem;
     z-index: 1;
     .container-secciones{
         background-color: $color-background-nav;
         height: 9.5rem;
         display: flex;
         justify-content: space-between;
-        gap: 14rem;
         border-top: 0.3rem solid $color-border-nav;
         border-bottom: 0.3rem solid $color-border-nav;
         .secciones{
@@ -189,17 +210,18 @@ nav{
 }
 
 .container-description{
-    width: 22rem;
+    width: 19rem;
     margin: 0 auto;
-    margin-top: -6rem;
-    font-size: 1.7rem;
+    margin-top: -4rem;
+    font-size: 1.4rem;
     h3{
         margin-bottom: 1rem;    
     }
 }
 
 footer{
-    min-width: 45rem;
+    min-width: 33rem;
+    max-width: 31rem;
     .footer {
         z-index: 2;
         --footer-background:#183153;
@@ -209,6 +231,7 @@ footer{
         min-height:12rem;
         color: $color-white;
         .bubbles {
+            width: 29rem;
             position: absolute;
             top:0;
             left:0;
@@ -286,30 +309,35 @@ footer{
     }
 }
 
-@media(max-width: 767px){
+@media(min-width: 414px) and (max-width: 767px){
     header{
-        min-width: 82rem;
+        min-width: 41.4rem;
+        max-width: 37.5rem;
         .container-logo{
             flex-direction: column;
             justify-content: center;
             gap: 3rem;
-            height: 59rem;
+            min-width: 41.4rem;
+            max-width: 37.5rem;
+            height: 50rem;
             background-color: $color-white;
             .container-nombre-biblioteca{
                 align-items: center;
                 h1{
-                    font-size: 3rem;
+                    font-size: 1.4rem;
                 }
                 span{
-                    font-size: 4rem;
+                    font-size: 2rem;
                 }
             }
         }
         .container-generadorSvg{
-            width: 82rem;
-            height: 15rem;
-            top: 45rem;
+            min-width: 41.4rem;
+            max-width: 37.5rem;
+            height: 6rem;
+            top: 53rem;
             .generadorSvg{
+                height: 6rem;
                 .colorOnda_dos{
                     display: none;
                 }
@@ -317,270 +345,272 @@ footer{
         }
     }
     nav{
-        min-width: 82rem;
+        min-width: 41.4rem;
+        max-width: 37.5rem;
         top:-1rem;
     }
     footer{
-        min-width: 82rem;
+        min-width: 41.4rem;
+        max-width: 37.5rem;
         .footer{
             .bubbles{
-                width: 76rem;
+                width: 33rem;
             }
         }
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-    header{
-        min-width: 151rem;
-        .container-logo{
-            background-color: $color-white;
-            color: $color-text;
-            height: 81rem;
-            justify-content: center;
-            img{
-                width: 21.8rem;
-                height: 21.8rem;
-                margin: 0 auto;
-                margin-top: 4rem;
-            }
-            .container-nombre-biblioteca{
-                align-items: center;
-                margin: 0 auto;
-                h1{
-                    font-size: 4vw;
-                }
-                span{
-                    font-size: 6rem;
-                }
-            }
-        }
-        .container-generadorSvg{
-            width: 151rem;
-            height: 15rem;
-            top: 67rem;
-            .generadorSvg{
-                .colorOnda_dos{
-                    display: none;
-                }
-            }
-        }
-    }
-    nav{
-        min-width: 151rem;
-        top: -1rem;
-    }
-    footer{
-        min-width: 151rem;
-        .footer{
-            .bubbles{
-                width: 134rem;
-            }
-        }
-    }
-}
+// @media (min-width: 768px) and (max-width: 1024px){
+//     header{
+//         min-width: 151rem;
+//         .container-logo{
+//             background-color: $color-white;
+//             color: $color-text;
+//             height: 81rem;
+//             justify-content: center;
+//             img{
+//                 width: 21.8rem;
+//                 height: 21.8rem;
+//                 margin: 0 auto;
+//                 margin-top: 4rem;
+//             }
+//             .container-nombre-biblioteca{
+//                 align-items: center;
+//                 margin: 0 auto;
+//                 h1{
+//                     font-size: 4vw;
+//                 }
+//                 span{
+//                     font-size: 6rem;
+//                 }
+//             }
+//         }
+//         .container-generadorSvg{
+//             width: 151rem;
+//             height: 15rem;
+//             top: 67rem;
+//             .generadorSvg{
+//                 .colorOnda_dos{
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+//     nav{
+//         min-width: 151rem;
+//         top: -1rem;
+//     }
+//     footer{
+//         min-width: 151rem;
+//         .footer{
+//             .bubbles{
+//                 width: 134rem;
+//             }
+//         }
+//     }
+// }
 
-@media (min-width: 1025px) and (max-width: 1440px){
-    header{
-        min-width: 144rem;
-        height: 100vh;
-        .container-logo{
-            justify-content: center;
-            background-color: $color-white;
-            color: $color-text;
-            gap: 3rem;
-            height: 79.2rem;
-            top: 4rem;
-            .container-nombre-biblioteca{
-                align-items: center;
-                h1{
-                    font-size: 3vw;
-                }
-                span{
-                    font-size: 4rem;
-                }
-            }
-        }
-        .container-generadorSvg{
-            width: 144rem;
-            height: 15rem;
-            top: 68.3rem;
-            .generadorSvg{
-                .colorOnda_uno{
-                    display: none;
-                }
-                .colorOnda_dos{
-                    fill: $color-white;
-                }
-            }
-        }
-    }
-    nav{
-        min-width: 144rem;
-        top: -1rem;
-    }
-    footer{
-        min-width: 142rem;
-        .footer{
-            .bubbles{
-                width: 134rem;
-            }
-        }
-    }
-}
+// @media (min-width: 1025px) and (max-width: 1440px){
+//     header{
+//         min-width: 144rem;
+//         height: 100vh;
+//         .container-logo{
+//             justify-content: center;
+//             background-color: $color-white;
+//             color: $color-text;
+//             gap: 3rem;
+//             height: 79.2rem;
+//             top: 4rem;
+//             .container-nombre-biblioteca{
+//                 align-items: center;
+//                 h1{
+//                     font-size: 3vw;
+//                 }
+//                 span{
+//                     font-size: 4rem;
+//                 }
+//             }
+//         }
+//         .container-generadorSvg{
+//             width: 144rem;
+//             height: 15rem;
+//             top: 68.3rem;
+//             .generadorSvg{
+//                 .colorOnda_uno{
+//                     display: none;
+//                 }
+//                 .colorOnda_dos{
+//                     fill: $color-white;
+//                 }
+//             }
+//         }
+//     }
+//     nav{
+//         min-width: 144rem;
+//         top: -1rem;
+//     }
+//     footer{
+//         min-width: 142rem;
+//         .footer{
+//             .bubbles{
+//                 width: 134rem;
+//             }
+//         }
+//     }
+// }
 
-@media (min-width: 1441px) and (max-width: 1880px){
-    header{
-        min-width: 196rem;
-        height: 100vh;
-        .container-logo{
-            justify-content: center;
-            background-color: red;
-            gap: 3rem;
-            width: 196rem;
-            height: 78.4rem;
-            top: 8.3rem;
-            background-size: cover;
-            .container-nombre-biblioteca{
-                align-items: center;
-                h1{
-                    font-size: 1.5vw;
-                }
-                span{
-                    font-size: 5rem;
-                }
-            }
-        }
-        .container-generadorSvg{
-            width: 196rem;
-            height: 15rem;
-            top: 71.8rem;
-            .generadorSvg{
-                .colorOnda_uno{
-                    display: none;
-                }
-                .colorOnda_dos{
-                    fill: $color-white;
-                }
-            }
-        }
-    }
-    nav{
-        min-width: 196rem;
-        top: -1rem;
-    }
-    footer{
-        min-width: 196rem;
-        .footer{
-            .bubbles{
-                width: 185rem;
-            }
-        }
-    }
-}
+// @media (min-width: 1441px) and (max-width: 1880px){
+//     header{
+//         min-width: 196rem;
+//         height: 100vh;
+//         .container-logo{
+//             justify-content: center;
+//             background-color: red;
+//             gap: 3rem;
+//             width: 196rem;
+//             height: 78.4rem;
+//             top: 8.3rem;
+//             background-size: cover;
+//             .container-nombre-biblioteca{
+//                 align-items: center;
+//                 h1{
+//                     font-size: 1.5vw;
+//                 }
+//                 span{
+//                     font-size: 5rem;
+//                 }
+//             }
+//         }
+//         .container-generadorSvg{
+//             width: 196rem;
+//             height: 15rem;
+//             top: 71.8rem;
+//             .generadorSvg{
+//                 .colorOnda_uno{
+//                     display: none;
+//                 }
+//                 .colorOnda_dos{
+//                     fill: $color-white;
+//                 }
+//             }
+//         }
+//     }
+//     nav{
+//         min-width: 196rem;
+//         top: -1rem;
+//     }
+//     footer{
+//         min-width: 196rem;
+//         .footer{
+//             .bubbles{
+//                 width: 185rem;
+//             }
+//         }
+//     }
+// }
 
-@media (min-width: 1881px) and (max-width:1920px){
-    header{
-        width: 190rem;
-        height: 100vh;
-        .container-logo{
-            justify-content: center;
-            background-color: $color-white;
-            color: $color-text;
-            gap: 3rem;
-            width: 190rem;
-            height: 110.8rem;
-            top: 8rem;
-            background-size: cover;
-            .container-nombre-biblioteca{
-                align-items: center;
-                h1{
-                    font-size: 1.5vw;
-                }
-                span{
-                    font-size: 5rem;
-                }
-            }
-        }
-        .container-generadorSvg{
-            width: 190rem;
-            height: 15rem;
-            top: 103.9rem;
-            .generadorSvg{
-                .colorOnda_uno{
-                    display: none;
-                }
-                .colorOnda_dos{
-                    fill: $color-white;
-                }
-            }
-        }
-    }
-    nav{
-        width: 190rem;
-        top: -1rem;
-    }
-    footer{
-        width: 190rem;
-        .footer{
-            .bubbles{
-                width: 172rem;
-            }
-        }
-    }
-}
+// @media (min-width: 1881px) and (max-width:1920px){
+//     header{
+//         width: 190rem;
+//         height: 100vh;
+//         .container-logo{
+//             justify-content: center;
+//             background-color: $color-white;
+//             color: $color-text;
+//             gap: 3rem;
+//             width: 190rem;
+//             height: 110.8rem;
+//             top: 8rem;
+//             background-size: cover;
+//             .container-nombre-biblioteca{
+//                 align-items: center;
+//                 h1{
+//                     font-size: 1.5vw;
+//                 }
+//                 span{
+//                     font-size: 5rem;
+//                 }
+//             }
+//         }
+//         .container-generadorSvg{
+//             width: 190rem;
+//             height: 15rem;
+//             top: 103.9rem;
+//             .generadorSvg{
+//                 .colorOnda_uno{
+//                     display: none;
+//                 }
+//                 .colorOnda_dos{
+//                     fill: $color-white;
+//                 }
+//             }
+//         }
+//     }
+//     nav{
+//         width: 190rem;
+//         top: -1rem;
+//     }
+//     footer{
+//         width: 190rem;
+//         .footer{
+//             .bubbles{
+//                 width: 172rem;
+//             }
+//         }
+//     }
+// }
 
-@media (min-width: 1921px){
-    header{
-        width: 190rem;
-        height: 100vh;
-        .container-logo{
-            justify-content: center;
-            background-color: $color-white;
-            color: $color-text;
-            gap: 3rem;
-            width: 190rem;
-            height: 83.9rem;
-            top: 8rem;
-            background-size: cover;
-            .container-nombre-biblioteca{
-                align-items: center;
-                h1{
-                    font-size: 1.5vw;
-                }
-                span{
-                    font-size: 5rem;
-                }
-            }
-        }
-        .container-generadorSvg{
-            width: 190rem;
-            height: 15rem;
-            top: 77rem;
-            .generadorSvg{
-                .colorOnda_uno{
-                    display: none;
-                }
-                .colorOnda_dos{
-                    fill: $color-white;
-                }
-            }
-        }
-    }
-    nav{
-        overflow-x: hidden;
-        width: 190rem;
-        top: -1rem;
-    }
-    footer{
-        width: 190rem;
-        .footer{
-            .bubbles{
-                width: 172rem;
-            }
-        }
-    }
-}
+// @media (min-width: 1921px){
+//     header{
+//         width: 190rem;
+//         height: 100vh;
+//         .container-logo{
+//             justify-content: center;
+//             background-color: $color-white;
+//             color: $color-text;
+//             gap: 3rem;
+//             width: 190rem;
+//             height: 83.9rem;
+//             top: 8rem;
+//             background-size: cover;
+//             .container-nombre-biblioteca{
+//                 align-items: center;
+//                 h1{
+//                     font-size: 1.5vw;
+//                 }
+//                 span{
+//                     font-size: 5rem;
+//                 }
+//             }
+//         }
+//         .container-generadorSvg{
+//             width: 190rem;
+//             height: 15rem;
+//             top: 77rem;
+//             .generadorSvg{
+//                 .colorOnda_uno{
+//                     display: none;
+//                 }
+//                 .colorOnda_dos{
+//                     fill: $color-white;
+//                 }
+//             }
+//         }
+//     }
+//     nav{
+//         overflow-x: hidden;
+//         width: 190rem;
+//         top: -1rem;
+//     }
+//     footer{
+//         width: 190rem;
+//         .footer{
+//             .bubbles{
+//                 width: 172rem;
+//             }
+//         }
+//     }
+// }
 
 @media (min-width: 320px) and (max-width: 2560px) {
     .secciones-menu {
