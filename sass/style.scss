@@ -150,8 +150,12 @@ main{
                     .container_parrafos_libro{
                         width: 20rem;
                         p{
-                            font-size: 0.96rem;
+                            font-size: 1.12rem;
                             text-align: justify;
+                            margin-bottom: 1rem;
+                        }
+                        p:nth-child(3n){
+                            display: none;
                         }
                     }
                 }
