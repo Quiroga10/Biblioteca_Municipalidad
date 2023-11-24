@@ -455,104 +455,117 @@ footer{
     }
 }
 
-// @media (min-width: 1025px) and (max-width: 1440px){
-//     header{
-//         min-width: 144rem;
-//         height: 100vh;
-//         .container-logo{
-//             justify-content: center;
-//             background-color: $color-white;
-//             color: $color-text;
-//             gap: 3rem;
-//             height: 79.2rem;
-//             top: 4rem;
-//             .container-nombre-biblioteca{
-//                 align-items: center;
-//                 h1{
-//                     font-size: 3vw;
-//                 }
-//                 span{
-//                     font-size: 4rem;
-//                 }
-//             }
-//         }
-//         .container-generadorSvg{
-//             width: 144rem;
-//             height: 15rem;
-//             top: 68.3rem;
-//             .generadorSvg{
-//                 .colorOnda_uno{
-//                     display: none;
-//                 }
-//                 .colorOnda_dos{
-//                     fill: $color-white;
-//                 }
-//             }
-//         }
-//     }
-//     nav{
-//         min-width: 144rem;
-//         top: -1rem;
-//     }
-//     footer{
-//         min-width: 142rem;
-//         .footer{
-//             .bubbles{
-//                 width: 134rem;
-//             }
-//         }
-//     }
-// }
+//laptops
+@media (min-width: 835px) and (max-width: 1440px){
+    header{
+        min-width: 144rem;
+        height: 100vh;
+        .container-logo{
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+            width: 144rem;
+            background-color: $color-white;
+            color: $color-text;
+            height: 77.9rem;
+            img{
+                width: 21.8rem;
+                height: 21.8rem;
+                margin: 0 auto;
+                margin-top: 4rem;
+            }
+            .container-nombre-biblioteca{
+                width: 1440;
+                align-items: center;
+                h1{
+                    font-size: 3vw;
+                }
+                span{
+                    font-size: 4rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 144rem;
+            height: 9rem;
+            top: 77.8rem;
+            .generadorSvg{
+                width: 149rem;
+                height: 9rem;
+                .colorOnda_dos{
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+    nav{
+        min-width: 144rem;
+        top: -1rem;
+        .container-secciones{
+            min-width: 144rem;
+        }
+    }
+    footer{
+        min-width: 144rem;
+        .footer{
+            .bubbles{
+                width: 134rem;
+            }
+        }
+    }
+}
 
-// @media (min-width: 1441px) and (max-width: 1880px){
-//     header{
-//         min-width: 196rem;
-//         height: 100vh;
-//         .container-logo{
-//             justify-content: center;
-//             background-color: red;
-//             gap: 3rem;
-//             width: 196rem;
-//             height: 78.4rem;
-//             top: 8.3rem;
-//             background-size: cover;
-//             .container-nombre-biblioteca{
-//                 align-items: center;
-//                 h1{
-//                     font-size: 1.5vw;
-//                 }
-//                 span{
-//                     font-size: 5rem;
-//                 }
-//             }
-//         }
-//         .container-generadorSvg{
-//             width: 196rem;
-//             height: 15rem;
-//             top: 71.8rem;
-//             .generadorSvg{
-//                 .colorOnda_uno{
-//                     display: none;
-//                 }
-//                 .colorOnda_dos{
-//                     fill: $color-white;
-//                 }
-//             }
-//         }
-//     }
-//     nav{
-//         min-width: 196rem;
-//         top: -1rem;
-//     }
-//     footer{
-//         min-width: 196rem;
-//         .footer{
-//             .bubbles{
-//                 width: 185rem;
-//             }
-//         }
-//     }
-// }
+@media (min-width: 1441px) and (max-width: 1880px){
+    header{
+        min-width: 188rem;
+        height: 100vh;
+        .container-logo{
+            justify-content: center;
+            background-color: red;
+            gap: 3rem;
+            width: 188rem;
+            height: 78.4rem;
+            background-size: cover;
+            .container-nombre-biblioteca{
+                width: 188rem;
+                align-items: center;
+                h1{
+                    font-size: 1.5vw;
+                }
+                span{
+                    font-size: 5rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 188rem;
+            height: 9rem;
+            top: 78rem;
+            .generadorSvg{
+                width: 188rem;
+                height: 9rem;
+                .colorOnda_dos{
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+    nav{
+        min-width: 188rem;
+        top: -1rem;
+        .container-secciones{
+            min-width: 188rem;
+        }
+    }
+    footer{
+        min-width: 188rem;
+        .footer{
+            .bubbles{
+                width: 174rem;
+            }
+        }
+    }
+}
 
 // @media (min-width: 1881px) and (max-width:1920px){
 //     header{

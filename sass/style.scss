@@ -346,40 +346,65 @@ main{
     }
 }
 
-// @media (min-width: 1025px) and (max-width: 1440px){
-//     main{
-//         width: 142rem;
-//         margin: 0 auto;
-//         section{
-//             .container-titulos{
-//                 margin-bottom: 5rem;
-//             }
-//         }
-//     }
-//     section{
-//         .container-cards{
-//             justify-content: center;
-//         }
-//     }
+//laptops
+@media (min-width: 835px) and (max-width: 1440px){
+    main{
+        width: 144rem;
+        margin: 0 auto;
+        section{
+            .container-titulos{
+                margin-bottom: 5rem;
+            }
+        }
+        section{
+            margin: 0 auto;
+            width: 90rem; 
+            .container-cards{
+                justify-content: center;
+                .cards{
+                    .body{
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+        section{
+            .container-form-contact{
+                max-width: 70rem;
+            }
+        }
+    }
 
-// }
+}
 
-// @media (min-width: 1441px) and (max-width: 1880px){
-//     main{
-//         width: 196rem;
-//         margin: 0 auto;
-//         section{
-//             .container-titulos{
-//                 margin-bottom: 5rem;
-//             }
-//         }
-//     }
-//     section{
-//         .container-cards{
-//             justify-content: center;
-//         }
-//     }
-// }
+@media (min-width: 1441px) and (max-width: 1880px){
+    main{
+        width: 188rem;
+        margin: 0 auto;
+        section{
+            .container-titulos{
+                margin-bottom: 5rem;
+            }
+        }
+        section{
+            margin: 0 auto;
+            width: 90rem;
+            .container-cards{
+                justify-content: center;
+                .cards{
+                    .body{
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+        section{
+            .container-form-contact{
+                max-width: 90rem;
+            }
+        }
+    }
+}
 
 // @media (min-width: 1881px) and (max-width:1920px){
 //     main{

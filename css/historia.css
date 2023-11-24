@@ -426,6 +426,111 @@ footer .footer .content > div .image {
     width: 74rem;
   }
 }
+@media (min-width: 835px) and (max-width: 1440px) {
+  header {
+    min-width: 144rem;
+    height: 100vh;
+  }
+  header .container-logo {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 144rem;
+    background-color: #fff;
+    color: #000;
+    height: 77.9rem;
+  }
+  header .container-logo img {
+    width: 21.8rem;
+    height: 21.8rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    width: 1440;
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 3vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 4rem;
+  }
+  header .container-generadorSvg {
+    width: 144rem;
+    height: 9rem;
+    top: 77.8rem;
+  }
+  header .container-generadorSvg .generadorSvg {
+    width: 149rem;
+    height: 9rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    fill: #fff;
+  }
+  nav {
+    min-width: 144rem;
+    top: -1rem;
+  }
+  nav .container-secciones {
+    min-width: 144rem;
+  }
+  footer {
+    min-width: 144rem;
+  }
+  footer .footer .bubbles {
+    width: 134rem;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1880px) {
+  header {
+    min-width: 188rem;
+    height: 100vh;
+  }
+  header .container-logo {
+    justify-content: center;
+    background-color: red;
+    gap: 3rem;
+    width: 188rem;
+    height: 78.4rem;
+    background-size: cover;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    width: 188rem;
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 1.5vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 5rem;
+  }
+  header .container-generadorSvg {
+    width: 188rem;
+    height: 9rem;
+    top: 78rem;
+  }
+  header .container-generadorSvg .generadorSvg {
+    width: 188rem;
+    height: 9rem;
+  }
+  header .container-generadorSvg .generadorSvg .colorOnda_dos {
+    fill: #fff;
+  }
+  nav {
+    min-width: 188rem;
+    top: -1rem;
+  }
+  nav .container-secciones {
+    min-width: 188rem;
+  }
+  footer {
+    min-width: 188rem;
+  }
+  footer .footer .bubbles {
+    width: 174rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 2560px) {
   .secciones-menu {
     margin-top: 24rem;
