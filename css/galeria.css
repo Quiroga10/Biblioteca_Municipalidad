@@ -417,11 +417,14 @@ footer .footer .content > div .image {
     min-width: 83.4rem;
     top: -1rem;
   }
+  nav .container-secciones {
+    min-width: 83.4rem;
+  }
   footer {
     min-width: 83.4rem;
   }
   footer .footer .bubbles {
-    width: 70rem;
+    width: 74rem;
   }
 }
 @media (min-width: 320px) and (max-width: 2560px) {

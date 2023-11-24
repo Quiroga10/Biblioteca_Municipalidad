@@ -2,6 +2,7 @@
 
 main{
     min-width: 36rem;
+    margin-top: -10rem;
     .sticky-container{
         padding:0px;
         margin:0px;
@@ -249,7 +250,7 @@ main{
 @media(min-width: 361px) and (max-width: 430px){
     main{
         min-width: 43rem;
-        margin-top: 27rem;
+        margin-top: 15rem;
         section{
             .container-titulos{
                 margin-bottom: 5rem;
@@ -289,6 +290,18 @@ main{
     main{
         min-width: 76.7rem;
         section{
+            margin: 0 auto;
+            width: 64rem;
+            .container-cards{
+                justify-content: flex-start;
+                .cards{
+                    .body{
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+        section{
             .container-form-contact{
                 max-width: 60.5rem;
             }
@@ -313,10 +326,22 @@ main{
                 }
             }
         }
-    }
-    section{
-        .container-cards{
-            justify-content: center;
+        section{
+            margin: 0 auto;
+            width: 64rem;
+            .container-cards{
+                justify-content: flex-start;
+                .cards{
+                    .body{
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+        section{
+            .container-form-contact{
+                max-width: 66rem;
+            }
         }
     }
 }

@@ -417,11 +417,14 @@ footer .footer .content > div .image {
     min-width: 83.4rem;
     top: -1rem;
   }
+  nav .container-secciones {
+    min-width: 83.4rem;
+  }
   footer {
     min-width: 83.4rem;
   }
   footer .footer .bubbles {
-    width: 70rem;
+    width: 74rem;
   }
 }
 @media (min-width: 320px) and (max-width: 2560px) {
@@ -431,6 +434,7 @@ footer .footer .content > div .image {
 }
 main {
   min-width: 36rem;
+  margin-top: -10rem;
 }
 main .sticky-container {
   padding: 0px;
@@ -668,7 +672,7 @@ main section .container-form-contact form .container-submit-form input[type=subm
 @media (min-width: 361px) and (max-width: 430px) {
   main {
     min-width: 43rem;
-    margin-top: 27rem;
+    margin-top: 15rem;
   }
   main section .container-titulos {
     margin-bottom: 5rem;
@@ -699,6 +703,16 @@ main section .container-form-contact form .container-submit-form input[type=subm
   main {
     min-width: 76.7rem;
   }
+  main section {
+    margin: 0 auto;
+    width: 64rem;
+  }
+  main section .container-cards {
+    justify-content: flex-start;
+  }
+  main section .container-cards .cards .body {
+    width: 4rem;
+  }
   main section .container-form-contact {
     max-width: 60.5rem;
   }
@@ -718,8 +732,18 @@ main section .container-form-contact form .container-submit-form input[type=subm
   main section .container-titulos h3 {
     font-size: 2vw;
   }
-  section .container-cards {
-    justify-content: center;
+  main section {
+    margin: 0 auto;
+    width: 64rem;
+  }
+  main section .container-cards {
+    justify-content: flex-start;
+  }
+  main section .container-cards .cards .body {
+    width: 4rem;
+  }
+  main section .container-form-contact {
+    max-width: 66rem;
   }
 }
 

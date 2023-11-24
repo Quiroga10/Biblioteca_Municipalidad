@@ -441,12 +441,15 @@ footer{
     nav{
         min-width: 83.4rem;
         top: -1rem;
+        .container-secciones{
+            min-width: 83.4rem;
+        }
     }
     footer{
         min-width:83.4rem;
         .footer{
             .bubbles{
-                width: 70rem;
+                width: 74rem;
             }
         }
     }
