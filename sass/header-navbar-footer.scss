@@ -24,8 +24,7 @@ $color-shadow-cards: rgb(6 5 5);
 
 nav{
     position: fixed;
-    min-width: 32rem;
-    max-width: 36rem;
+    min-width: 36rem;
     top: -1rem;
     z-index: 1;
     .container-secciones{
@@ -131,8 +130,7 @@ nav{
 }
 
 header{
-    min-width: 32rem;
-    max-width: 36rem;
+    min-width: 36rem;
     height: 46vh;
     color: $color-white;
     .container-logo{
@@ -221,7 +219,7 @@ header{
 }
 
 footer{
-    width: 36rem;
+    min-width: 36rem;
     .footer {
         z-index: 2;
         --footer-background:#183153;

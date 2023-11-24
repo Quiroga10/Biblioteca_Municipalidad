@@ -11,8 +11,7 @@ html {
 
 nav {
   position: fixed;
-  min-width: 32rem;
-  max-width: 36rem;
+  min-width: 36rem;
   top: -1rem;
   z-index: 1;
 }
@@ -118,8 +117,7 @@ nav .container-secciones .container-angle-right .fa-solid {
 }
 
 header {
-  min-width: 32rem;
-  max-width: 36rem;
+  min-width: 36rem;
   height: 46vh;
   color: #fff;
 }
@@ -205,7 +203,7 @@ header .container-generadorSvg .generadorSvg .colorOnda_uno {
 }
 
 footer {
-  width: 36rem;
+  min-width: 36rem;
 }
 footer .footer {
   z-index: 2;
