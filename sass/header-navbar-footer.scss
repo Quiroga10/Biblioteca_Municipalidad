@@ -306,6 +306,14 @@ footer{
         bottom:var(--distance, 10rem);
     }
 }
+
+@media (min-width: 375px) and (max-width: 2560px) {
+    .secciones-menu {
+        margin-top: 24rem;
+    }
+}
+
+
 //celulares
 @media(min-width: 361px) and (max-width: 430px){
     header{
@@ -343,6 +351,9 @@ footer{
         top:-1rem;
         .container-secciones{
             min-width: 43rem;
+            .secciones-menu{
+                margin-left: -6rem;
+            }
         }
     }
     footer{
@@ -475,7 +486,7 @@ footer{
                 margin-top: 4rem;
             }
             .container-nombre-biblioteca{
-                width: 1440;
+                width: 1440px;
                 align-items: center;
                 h1{
                     font-size: 3vw;
@@ -521,7 +532,6 @@ footer{
         height: 100vh;
         .container-logo{
             justify-content: center;
-            background-color: red;
             gap: 3rem;
             width: 188rem;
             height: 78.4rem;
@@ -567,56 +577,62 @@ footer{
     }
 }
 
-// @media (min-width: 1881px) and (max-width:1920px){
-//     header{
-//         width: 190rem;
-//         height: 100vh;
-//         .container-logo{
-//             justify-content: center;
-//             background-color: $color-white;
-//             color: $color-text;
-//             gap: 3rem;
-//             width: 190rem;
-//             height: 110.8rem;
-//             top: 8rem;
-//             background-size: cover;
-//             .container-nombre-biblioteca{
-//                 align-items: center;
-//                 h1{
-//                     font-size: 1.5vw;
-//                 }
-//                 span{
-//                     font-size: 5rem;
-//                 }
-//             }
-//         }
-//         .container-generadorSvg{
-//             width: 190rem;
-//             height: 15rem;
-//             top: 103.9rem;
-//             .generadorSvg{
-//                 .colorOnda_uno{
-//                     display: none;
-//                 }
-//                 .colorOnda_dos{
-//                     fill: $color-white;
-//                 }
-//             }
-//         }
-//     }
-//     nav{
-//         width: 190rem;
-//         top: -1rem;
-//     }
-//     footer{
-//         width: 190rem;
-//         .footer{
-//             .bubbles{
-//                 width: 172rem;
-//             }
-//         }
-//     }
-// }
+@media (min-width: 1881px) and (max-width:1920px){
+    header{
+        width: 192rem;
+        height: 100vh;
+        .container-logo{
+            justify-content: center;
+            color: $color-text;
+            gap: 3rem;
+            width: 192rem;
+            height: 110.8rem;
+            background-size: cover;
+            img{
+                width: 30rem;
+                height: 30rem;
+                border-radius: 20rem;
+            }
+            .container-nombre-biblioteca{
+                width: 192rem;
+                align-items: center;
+                h1{
+                    font-size: 1.5vw;
+                }
+                span{
+                    font-size: 5rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 192rem;
+            height: 15rem;
+            top: 104.4rem;
+            .generadorSvg{
+                width: 192rem;
+                height: 15rem;
+                .colorOnda_dos{
+                    fill: $color-white;
+                }
+            }
+        }
+    }
+    nav{
+        width: 192rem;
+        top: -1rem;
+        .container-secciones{
+            min-width: 192rem;
+        }
+    }
+    footer{
+        width: 192rem;
+        .footer{
+            .bubbles{
+                width: 172rem;
+            }
+        }
+    }
+}
 
 // @media (min-width: 1921px){
 //     header{
@@ -669,9 +685,3 @@ footer{
 //         }
 //     }
 // }
-
-@media (min-width: 320px) and (max-width: 2560px) {
-    .secciones-menu {
-        margin-top: 24rem;
-    }
-}

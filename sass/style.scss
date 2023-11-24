@@ -406,18 +406,35 @@ main{
     }
 }
 
-// @media (min-width: 1881px) and (max-width:1920px){
-//     main{
-//         width: 190rem;
-//         margin: 0 auto;
-//         section{
-//             .container-titulos{
-//                 margin-bottom: 5rem;
-//                 margin-top: 45rem;
-//             }
-//         }
-//     }
-// }
+@media (min-width: 1881px) and (max-width:1920px){
+    main{
+        width: 192rem;
+        margin: 0 auto;
+        section{
+            .container-titulos{
+                margin-bottom: 5rem;
+                margin-top: 20rem;
+            }
+        }
+        section{
+            margin: 0 auto;
+            width: 90rem;
+            .container-cards{
+                justify-content: center;
+                .cards{
+                    .body{
+                        width: 4rem;
+                    }
+                }
+            }
+        }
+        section{
+            .container-form-contact{
+                max-width: 90rem;
+            }
+        }
+    }
+}
 
 // @media (min-width: 1921px){
 //     main{
