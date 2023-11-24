@@ -9,93 +9,16 @@ html {
   font-size: 62.5%;
 }
 
-header {
-  min-width: 37.5rem;
-  max-width: 31rem;
-  height: 46vh;
-  margin-top: -2rem;
-  color: #fff;
-}
-header .container-logo {
-  position: relative;
-  width: 37.5rem;
-  height: 37rem;
-  margin-top: 9.7rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3rem;
-  align-items: center;
-  background-color: #183153;
-  background-image: url("https://images.pexels.com/photos/19036675/pexels-photo-19036675/free-photo-of-ciudad-punto-de-referencia-libros-viaje.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-header .container-logo img {
-  width: 9.8rem;
-  height: 9.8rem;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 11rem;
-}
-header .container-logo .container-nombre-biblioteca {
-  width: 33rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fffefb;
-}
-header .container-logo .container-nombre-biblioteca h1 {
-  width: auto;
-  height: 5.2rem;
-  font-size: 1rem;
-  text-align: center;
-  font-family: "Jockey One", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2rem;
-  padding: 2rem;
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  transition: all 0.3s ease;
-}
-header .container-logo .container-nombre-biblioteca h1:hover {
-  transform: translate3d(0, -10px, 22px);
-  color: #ff6200;
-}
-header .container-logo .container-nombre-biblioteca span {
-  font-size: 3rem;
-}
-header .container-generadorSvg {
-  position: absolute;
-  overflow: hidden;
-  width: 37.5rem;
-  height: 9rem;
-  top: 36.8rem;
-}
-header .container-generadorSvg .generadorSvg {
-  width: 37.5rem;
-  height: 10rem;
-}
-header .container-generadorSvg .generadorSvg .colorOnda_uno, header .container-generadorSvg .generadorSvg .colorOnda_dos {
-  stroke: none;
-  fill: #fff;
-}
-header .container-generadorSvg .generadorSvg .colorOnda_uno {
-  display: none;
-}
-
 nav {
   position: fixed;
-  min-width: 37.5rem;
-  max-width: 31rem;
+  min-width: 32rem;
+  max-width: 36rem;
   top: -1rem;
   z-index: 1;
 }
 nav .container-secciones {
   background-color: #183153;
+  width: 36rem;
   height: 9.5rem;
   display: flex;
   justify-content: space-between;
@@ -194,6 +117,83 @@ nav .container-secciones .container-angle-right .fa-solid {
   font-size: 3rem;
 }
 
+header {
+  min-width: 32rem;
+  max-width: 36rem;
+  height: 46vh;
+  color: #fff;
+}
+header .container-logo {
+  position: relative;
+  width: 36rem;
+  height: 37rem;
+  margin-top: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  background-color: #183153;
+  background-image: url("https://images.pexels.com/photos/19036675/pexels-photo-19036675/free-photo-of-ciudad-punto-de-referencia-libros-viaje.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header .container-logo img {
+  width: 9.8rem;
+  height: 9.8rem;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 11rem;
+}
+header .container-logo .container-nombre-biblioteca {
+  width: 32rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fffefb;
+}
+header .container-logo .container-nombre-biblioteca h1 {
+  width: auto;
+  height: 5.2rem;
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Jockey One", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2rem;
+  padding: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  transition: all 0.3s ease;
+}
+header .container-logo .container-nombre-biblioteca h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff6200;
+}
+header .container-logo .container-nombre-biblioteca span {
+  font-size: 3rem;
+}
+header .container-generadorSvg {
+  position: absolute;
+  overflow: hidden;
+  width: 36rem;
+  height: 9rem;
+  top: 36.8rem;
+}
+header .container-generadorSvg .generadorSvg {
+  width: 36rem;
+  height: 9rem;
+}
+header .container-generadorSvg .generadorSvg .colorOnda_uno, header .container-generadorSvg .generadorSvg .colorOnda_dos {
+  stroke: none;
+  fill: #fff;
+}
+header .container-generadorSvg .generadorSvg .colorOnda_uno {
+  display: none;
+}
+
 .container-description {
   width: 19rem;
   margin: 0 auto;
@@ -205,8 +205,7 @@ nav .container-secciones .container-angle-right .fa-solid {
 }
 
 footer {
-  min-width: 37.5rem;
-  max-width: 31rem;
+  width: 36rem;
 }
 footer .footer {
   z-index: 2;
@@ -218,7 +217,7 @@ footer .footer {
   color: #fff;
 }
 footer .footer .bubbles {
-  width: 33rem;
+  width: 28rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -292,21 +291,20 @@ footer .footer .content > div .image {
     bottom: var(--distance, 10rem);
   }
 }
-@media (min-width: 414px) and (max-width: 767px) {
+@media (min-width: 361px) and (max-width: 430px) {
   header {
-    min-width: 41.4rem;
-    max-width: 37.5rem;
+    min-width: 43rem;
   }
   header .container-logo {
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-    min-width: 41.4rem;
-    max-width: 37.5rem;
+    width: 43.1rem;
     height: 50rem;
     background-color: #fff;
   }
   header .container-logo .container-nombre-biblioteca {
+    width: 43.1rem;
     align-items: center;
   }
   header .container-logo .container-nombre-biblioteca h1 {
@@ -316,28 +314,116 @@ footer .footer .content > div .image {
     font-size: 2rem;
   }
   header .container-generadorSvg {
-    min-width: 41.4rem;
-    max-width: 37.5rem;
+    width: 43.1rem;
     height: 6rem;
     top: 53rem;
   }
   header .container-generadorSvg .generadorSvg {
+    width: 43.1rem;
     height: 6rem;
   }
-  header .container-generadorSvg .generadorSvg .colorOnda_dos {
-    display: none;
+  nav {
+    min-width: 43rem;
+    top: -1rem;
+  }
+  nav .container-secciones {
+    min-width: 43rem;
+  }
+  footer {
+    min-width: 43rem;
+  }
+  footer .footer .bubbles {
+    width: 38rem;
+  }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+  header {
+    min-width: 76.7rem;
+  }
+  header .container-logo {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 76.7rem;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    width: 76rem;
+    align-items: center;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 2rem;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 4rem;
+  }
+  header .container-generadorSvg {
+    width: 76.7rem;
+    top: 37rem;
+  }
+  header .container-generadorSvg .generadorSvg {
+    width: 76.7rem;
   }
   nav {
-    min-width: 41.4rem;
-    max-width: 37.5rem;
+    min-width: 76.7rem;
+  }
+  nav .container-secciones {
+    min-width: 76.7rem;
+  }
+  footer {
+    min-width: 76.7rem;
+  }
+  footer .footer .bubbles {
+    width: 70rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 834px) {
+  header {
+    min-width: 83.4rem;
+  }
+  header .container-logo {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    width: 83.4rem;
+    background-color: #fff;
+    color: #000;
+    height: 85.7rem;
+  }
+  header .container-logo img {
+    width: 21.8rem;
+    height: 21.8rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  header .container-logo .container-nombre-biblioteca {
+    width: 76.8rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+  header .container-logo .container-nombre-biblioteca h1 {
+    font-size: 4vw;
+  }
+  header .container-logo .container-nombre-biblioteca span {
+    font-size: 6rem;
+  }
+  header .container-generadorSvg {
+    width: 83.4rem;
+    height: 15rem;
+    top: 79.3rem;
+  }
+  header .container-generadorSvg .generadorSvg {
+    width: 83.4rem;
+    height: 15rem;
+  }
+  nav {
+    min-width: 83.4rem;
     top: -1rem;
   }
   footer {
-    min-width: 41.4rem;
-    max-width: 37.5rem;
+    min-width: 83.4rem;
   }
   footer .footer .bubbles {
-    width: 33rem;
+    width: 70rem;
   }
 }
 @media (min-width: 320px) and (max-width: 2560px) {
@@ -346,8 +432,7 @@ footer .footer .content > div .image {
   }
 }
 main {
-  min-width: 37.5rem;
-  max-width: 31rem;
+  min-width: 36rem;
 }
 main .sticky-container {
   padding: 0px;
@@ -530,7 +615,8 @@ main section .container-ubicacion #map {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agregar una sombra alrededor del mapa */
 }
 main section .container-form-contact {
-  max-width: 28rem;
+  min-width: 32rem;
+  max-width: 34rem;
   margin: 0 auto;
   padding: 2rem;
   border: 1px solid #ccc;
@@ -581,10 +667,10 @@ main section .container-form-contact form .container-submit-form input[type=subm
   background-color: #284e83;
 }
 
-@media (min-width: 414px) and (max-width: 767px) {
+@media (min-width: 361px) and (max-width: 430px) {
   main {
-    min-width: 41.4rem;
-    max-width: 37.5rem;
+    min-width: 43rem;
+    margin-top: 27rem;
   }
   main section .container-titulos {
     margin-bottom: 5rem;
@@ -609,6 +695,33 @@ main section .container-form-contact form .container-submit-form input[type=subm
   }
   main section .container-ubicacion #map {
     width: 70%;
+  }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+  main {
+    min-width: 76.7rem;
+  }
+  main section .container-form-contact {
+    max-width: 60.5rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 834px) {
+  main {
+    min-width: 83.4rem;
+    margin: 0 auto;
+    margin-top: 50rem;
+  }
+  main section .container-titulos {
+    margin-bottom: 5rem;
+  }
+  main section .container-titulos h2 {
+    font-size: 3vw;
+  }
+  main section .container-titulos h3 {
+    font-size: 2vw;
+  }
+  section .container-cards {
+    justify-content: center;
   }
 }
 

@@ -22,94 +22,15 @@ $color-orange: #FD9158;
 $color-dark-gray: #353430;
 $color-shadow-cards: rgb(6 5 5);
 
-header{
-    min-width: 37.5rem;
-    max-width: 31rem;
-    height: 46vh;
-    margin-top: -2rem;
-    color: $color-white;
-    .container-logo{
-        position: relative;
-        width: 37.5rem;
-        height: 37rem;
-        margin-top: 9.7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-        align-items: center;
-        background-color: $color-background-nav;
-        background-image: url('https://images.pexels.com/photos/19036675/pexels-photo-19036675/free-photo-of-ciudad-punto-de-referencia-libros-viaje.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
-        background-repeat: no-repeat;
-        background-size: cover;
-        img{
-            width: 9.8rem;
-            height: 9.8rem;
-            margin: 0 auto;
-            background-color: $color-white;
-            border-radius: 11rem;
-        }
-        .container-nombre-biblioteca{
-            width: 33rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #fffefb;
-            h1{
-                width: auto;
-                height: 5.2rem;
-                font-size: 1rem;
-                text-align: center;
-                font-family: $font-jockey-one;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 1.2rem;
-                padding: 2rem;
-                overflow: hidden;
-                white-space: nowrap; 
-                margin: 0 auto; 
-                letter-spacing: .15em;
-                transition: all 0.3s ease;
-            }
-            h1:hover{
-                transform: translate3d(0, -10px, 22px);
-                color: #ff6200;
-            }
-            span{
-                font-size: 3rem;
-            }
-        }
-        
-
-    }
-    .container-generadorSvg{
-        position: absolute;
-        overflow: hidden;
-        width: 37.5rem;
-        height: 9rem;
-        top: 36.8rem;
-        .generadorSvg{
-            width: 37.5rem;
-            height: 10rem;
-            .colorOnda_uno, .colorOnda_dos{
-                stroke: none;
-                fill: $color-white;
-            }
-            .colorOnda_uno{
-                display: none;
-            }
-        }
-    }
-}
-
 nav{
     position: fixed;
-    min-width: 37.5rem;
-    max-width: 31rem;
+    min-width: 32rem;
+    max-width: 36rem;
     top: -1rem;
     z-index: 1;
     .container-secciones{
         background-color: $color-background-nav;
+        width: 36rem;
         height: 9.5rem;
         display: flex;
         justify-content: space-between;
@@ -209,6 +130,86 @@ nav{
     }
 }
 
+header{
+    min-width: 32rem;
+    max-width: 36rem;
+    height: 46vh;
+    color: $color-white;
+    .container-logo{
+        position: relative;
+        width: 36rem;
+        height: 37rem;
+        margin-top: 8.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        align-items: center;
+        background-color: $color-background-nav;
+        background-image: url('https://images.pexels.com/photos/19036675/pexels-photo-19036675/free-photo-of-ciudad-punto-de-referencia-libros-viaje.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
+        background-repeat: no-repeat;
+        background-size: cover;
+        img{
+            width: 9.8rem;
+            height: 9.8rem;
+            margin: 0 auto;
+            background-color: $color-white;
+            border-radius: 11rem;
+        }
+        .container-nombre-biblioteca{
+            width: 32rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fffefb;
+            h1{
+                width: auto;
+                height: 5.2rem;
+                font-size: 1rem;
+                text-align: center;
+                font-family: $font-jockey-one;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.2rem;
+                padding: 2rem;
+                overflow: hidden;
+                white-space: nowrap; 
+                margin: 0 auto; 
+                letter-spacing: .15em;
+                transition: all 0.3s ease;
+            }
+            h1:hover{
+                transform: translate3d(0, -10px, 22px);
+                color: #ff6200;
+            }
+            span{
+                font-size: 3rem;
+            }
+        }
+        
+
+    }
+    .container-generadorSvg{
+        position: absolute;
+        overflow: hidden;
+        width: 36rem;
+        height: 9rem;
+        top: 36.8rem;
+        .generadorSvg{
+            width: 36rem;
+            height: 9rem;
+            .colorOnda_uno, .colorOnda_dos{
+                stroke: none;
+                fill: $color-white;
+            }
+            .colorOnda_uno{
+                display: none;
+            }
+        }
+    }
+}
+
+
 .container-description{
     width: 19rem;
     margin: 0 auto;
@@ -220,8 +221,7 @@ nav{
 }
 
 footer{
-    min-width: 37.5rem;
-    max-width: 31rem;
+    width: 36rem;
     .footer {
         z-index: 2;
         --footer-background:#183153;
@@ -231,7 +231,7 @@ footer{
         min-height:12rem;
         color: $color-white;
         .bubbles {
-            width: 33rem;
+            width: 28rem;
             position: absolute;
             top:0;
             left:0;
@@ -308,20 +308,19 @@ footer{
         bottom:var(--distance, 10rem);
     }
 }
-
-@media(min-width: 414px) and (max-width: 767px){
+//celulares
+@media(min-width: 361px) and (max-width: 430px){
     header{
-        min-width: 41.4rem;
-        max-width: 37.5rem;
+        min-width: 43rem;
         .container-logo{
             flex-direction: column;
             justify-content: center;
             gap: 3rem;
-            min-width: 41.4rem;
-            max-width: 37.5rem;
+            width: 43.1rem;
             height: 50rem;
             background-color: $color-white;
             .container-nombre-biblioteca{
+                width: 43.1rem;
                 align-items: center;
                 h1{
                     font-size: 1.4rem;
@@ -332,83 +331,128 @@ footer{
             }
         }
         .container-generadorSvg{
-            min-width: 41.4rem;
-            max-width: 37.5rem;
+            width: 43.1rem;
             height: 6rem;
             top: 53rem;
             .generadorSvg{
+                width: 43.1rem;
                 height: 6rem;
-                .colorOnda_dos{
-                    display: none;
-                }
             }
         }
     }
     nav{
-        min-width: 41.4rem;
-        max-width: 37.5rem;
+        min-width: 43rem;
         top:-1rem;
+        .container-secciones{
+            min-width: 43rem;
+        }
     }
     footer{
-        min-width: 41.4rem;
-        max-width: 37.5rem;
+        min-width: 43rem;
         .footer{
             .bubbles{
-                width: 33rem;
+                width: 38rem;
+            }
+        }
+    }
+}
+//tabletas
+
+@media (min-width: 431px) and (max-width:767px){
+    header{
+        min-width: 76.7rem;
+        .container-logo{
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+            width: 76.7rem;
+            .container-nombre-biblioteca{
+                width: 76rem;
+                align-items: center;
+                h1{
+                    font-size: 2rem;
+                }
+                span{
+                    font-size: 4rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 76.7rem;
+            top: 37rem;
+            .generadorSvg{
+                width: 76.7rem;
+            }
+        }
+    }
+    nav{
+        min-width: 76.7rem;
+        .container-secciones{
+            min-width: 76.7rem;
+        }
+    }
+    footer{
+        min-width: 76.7rem;
+        .footer{
+            .bubbles{
+                width: 70rem;
             }
         }
     }
 }
 
-// @media (min-width: 768px) and (max-width: 1024px){
-//     header{
-//         min-width: 151rem;
-//         .container-logo{
-//             background-color: $color-white;
-//             color: $color-text;
-//             height: 81rem;
-//             justify-content: center;
-//             img{
-//                 width: 21.8rem;
-//                 height: 21.8rem;
-//                 margin: 0 auto;
-//                 margin-top: 4rem;
-//             }
-//             .container-nombre-biblioteca{
-//                 align-items: center;
-//                 margin: 0 auto;
-//                 h1{
-//                     font-size: 4vw;
-//                 }
-//                 span{
-//                     font-size: 6rem;
-//                 }
-//             }
-//         }
-//         .container-generadorSvg{
-//             width: 151rem;
-//             height: 15rem;
-//             top: 67rem;
-//             .generadorSvg{
-//                 .colorOnda_dos{
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-//     nav{
-//         min-width: 151rem;
-//         top: -1rem;
-//     }
-//     footer{
-//         min-width: 151rem;
-//         .footer{
-//             .bubbles{
-//                 width: 134rem;
-//             }
-//         }
-//     }
-// }
+@media (min-width: 768px) and (max-width: 834px){
+    header{
+        min-width: 83.4rem;
+        .container-logo{
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+            width: 83.4rem;
+            background-color: $color-white;
+            color: $color-text;
+            height: 85.7rem;
+            img{
+                width: 21.8rem;
+                height: 21.8rem;
+                margin: 0 auto;
+                margin-top: 4rem;
+            }
+            .container-nombre-biblioteca{
+                width: 76.8rem;
+                align-items: center;
+                margin: 0 auto;
+                h1{
+                    font-size: 4vw;
+                }
+                span{
+                    font-size: 6rem;
+                }
+            }
+        }
+        .container-generadorSvg{
+            width: 83.4rem;
+            height: 15rem;
+            top: 79.3rem;
+            .generadorSvg{
+                width: 83.4rem;
+                height: 15rem;
+            }
+        }
+    }
+    nav{
+        min-width: 83.4rem;
+        top: -1rem;
+    }
+    footer{
+        min-width:83.4rem;
+        .footer{
+            .bubbles{
+                width: 70rem;
+            }
+        }
+    }
+}
 
 // @media (min-width: 1025px) and (max-width: 1440px){
 //     header{
