@@ -70,7 +70,7 @@ main{
             align-items: center;
             justify-content: space-between;
             height: 5rem;
-            margin-top: 9rem;
+            margin-top: 14rem;
             margin-bottom: 5rem;
             gap: 2rem;
             h2{
@@ -250,7 +250,7 @@ main{
 @media(min-width: 361px) and (max-width: 430px){
     main{
         min-width: 43rem;
-        margin-top: 15rem;
+        margin-top: -10rem;
         section{
             .container-titulos{
                 margin-bottom: 5rem;
@@ -314,7 +314,7 @@ main{
     main{
         min-width: 83.4rem;
         margin: 0 auto;
-        margin-top: 50rem;
+        margin-top: -10rem;
         section{
             .container-titulos{
                 margin-bottom: 5rem;
@@ -328,12 +328,15 @@ main{
         }
         section{
             margin: 0 auto;
-            width: 64rem;
+            width: 68rem;
             .container-cards{
                 justify-content: flex-start;
                 .cards{
                     .body{
                         width: 4rem;
+                    }
+                    .description{
+                        width: 21rem;
                     }
                 }
             }
@@ -353,7 +356,14 @@ main{
         margin: 0 auto;
         section{
             .container-titulos{
-                margin-bottom: 5rem;
+                margin-bottom: 11rem;
+                gap: 4rem;
+                h2{
+                    font-size: 3.4rem;
+                }
+                h3{
+                    font-size: 3rem;
+                }
             }
         }
         section{
@@ -364,6 +374,9 @@ main{
                 .cards{
                     .body{
                         width: 4rem;
+                    }
+                    .description{
+                        width: 21rem;
                     }
                 }
             }
@@ -408,7 +421,7 @@ main{
 
 @media (min-width: 1881px) and (max-width:1920px){
     main{
-        width: 192rem;
+        width: 190rem;
         margin: 0 auto;
         section{
             .container-titulos{

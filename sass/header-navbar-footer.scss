@@ -130,6 +130,7 @@ nav{
 }
 
 header{
+    position: relative;
     min-width: 36rem;
     height: 46vh;
     color: $color-white;
@@ -143,10 +144,6 @@ header{
         justify-content: center;
         gap: 3rem;
         align-items: center;
-        background-color: $color-background-nav;
-        background-image: url('https://images.pexels.com/photos/19036675/pexels-photo-19036675/free-photo-of-ciudad-punto-de-referencia-libros-viaje.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load');
-        background-repeat: no-repeat;
-        background-size: cover;
         img{
             width: 9.8rem;
             height: 9.8rem;
@@ -155,7 +152,7 @@ header{
             border-radius: 11rem;
         }
         .container-nombre-biblioteca{
-            width: 32rem;
+            width: 35rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -163,7 +160,7 @@ header{
             h1{
                 width: auto;
                 height: 5.2rem;
-                font-size: 1rem;
+                font-size: 1.5rem;
                 text-align: center;
                 font-family: $font-jockey-one;
                 font-style: normal;
@@ -204,6 +201,16 @@ header{
                 display: none;
             }
         }
+    }
+    video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5s;
+        z-index: -1;
     }
 }
 
@@ -318,13 +325,14 @@ footer{
 @media(min-width: 361px) and (max-width: 430px){
     header{
         min-width: 43rem;
+        margin-top: 8rem;
+        height: 59rem;
         .container-logo{
             flex-direction: column;
             justify-content: center;
             gap: 3rem;
             width: 43.1rem;
             height: 50rem;
-            background-color: $color-white;
             .container-nombre-biblioteca{
                 width: 43.1rem;
                 align-items: center;
@@ -413,19 +421,18 @@ footer{
 @media (min-width: 768px) and (max-width: 834px){
     header{
         min-width: 83.4rem;
+        height: 85.7rem;
         .container-logo{
             flex-direction: column;
             justify-content: center;
             gap: 3rem;
             width: 83.4rem;
-            background-color: $color-white;
             color: $color-text;
-            height: 85.7rem;
+            height: inherit;
             img{
                 width: 21.8rem;
                 height: 21.8rem;
                 margin: 0 auto;
-                margin-top: 4rem;
             }
             .container-nombre-biblioteca{
                 width: 76.8rem;
@@ -442,7 +449,7 @@ footer{
         .container-generadorSvg{
             width: 83.4rem;
             height: 15rem;
-            top: 79.3rem;
+            top: 71.3rem;
             .generadorSvg{
                 width: 83.4rem;
                 height: 15rem;
@@ -476,7 +483,6 @@ footer{
             justify-content: center;
             gap: 3rem;
             width: 144rem;
-            background-color: $color-white;
             color: $color-text;
             height: 77.9rem;
             img{
@@ -489,17 +495,18 @@ footer{
                 width: 1440px;
                 align-items: center;
                 h1{
+                    width: inherit;
                     font-size: 3vw;
                 }
                 span{
-                    font-size: 4rem;
+                    font-size: 6rem;
                 }
             }
         }
         .container-generadorSvg{
             width: 144rem;
             height: 9rem;
-            top: 77.8rem;
+            top: 74.8rem;
             .generadorSvg{
                 width: 149rem;
                 height: 9rem;
@@ -540,10 +547,11 @@ footer{
                 width: 188rem;
                 align-items: center;
                 h1{
-                    font-size: 1.5vw;
+                    width: inherit;
+                    font-size: 3.5vw;
                 }
                 span{
-                    font-size: 5rem;
+                    font-size: 6.5rem;
                 }
             }
         }
@@ -578,15 +586,22 @@ footer{
 }
 
 @media (min-width: 1881px) and (max-width:1920px){
+    nav{
+        width: 190rem;
+        top: -1rem;
+        .container-secciones{
+            min-width: 190rem;
+        }
+    }
     header{
-        width: 192rem;
-        height: 100vh;
+        width: 190rem;
+        height: 89vh;
         .container-logo{
             justify-content: center;
             color: $color-text;
             gap: 3rem;
-            width: 192rem;
-            height: 110.8rem;
+            width: 190rem;
+            height: 75rem;
             background-size: cover;
             img{
                 width: 30rem;
@@ -594,9 +609,10 @@ footer{
                 border-radius: 20rem;
             }
             .container-nombre-biblioteca{
-                width: 192rem;
+                width: 190rem;
                 align-items: center;
                 h1{
+                    width: inherit;
                     font-size: 1.5vw;
                 }
                 span{
@@ -605,11 +621,11 @@ footer{
             }
         }
         .container-generadorSvg{
-            width: 192rem;
+            width: 190rem;
             height: 15rem;
-            top: 104.4rem;
+            top: 67.4rem;
             .generadorSvg{
-                width: 192rem;
+                width: 190rem;
                 height: 15rem;
                 .colorOnda_dos{
                     fill: $color-white;
@@ -617,15 +633,8 @@ footer{
             }
         }
     }
-    nav{
-        width: 192rem;
-        top: -1rem;
-        .container-secciones{
-            min-width: 192rem;
-        }
-    }
     footer{
-        width: 192rem;
+        width: 190rem;
         .footer{
             .bubbles{
                 width: 172rem;
