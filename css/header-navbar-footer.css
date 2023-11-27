@@ -50,8 +50,8 @@ nav .container-secciones .secciones p {
 }
 nav .container-secciones .secciones-menu {
   position: fixed;
-  top: -16rem;
-  left: 40rem;
+  top: 8rem;
+  left: 29rem;
   bottom: 0;
   z-index: 3;
   opacity: 0;
@@ -143,8 +143,11 @@ header .container-logo .container-nombre-biblioteca {
   width: 35rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
   color: #fffefb;
+}
+header .container-logo .container-nombre-biblioteca h2 {
+  font-size: 3rem;
 }
 header .container-logo .container-nombre-biblioteca h1 {
   width: auto;
@@ -161,13 +164,6 @@ header .container-logo .container-nombre-biblioteca h1 {
   margin: 0 auto;
   letter-spacing: 0.15em;
   transition: all 0.3s ease;
-}
-header .container-logo .container-nombre-biblioteca h1:hover {
-  transform: translate3d(0, -10px, 22px);
-  color: #ff6200;
-}
-header .container-logo .container-nombre-biblioteca span {
-  font-size: 3rem;
 }
 header .container-generadorSvg {
   position: absolute;
@@ -297,7 +293,7 @@ footer .footer .content > div .image {
 }
 @media (min-width: 375px) and (max-width: 2560px) {
   .secciones-menu {
-    margin-top: 24rem;
+    margin-left: 12rem;
   }
 }
 @media (min-width: 361px) and (max-width: 430px) {
@@ -317,10 +313,10 @@ footer .footer .content > div .image {
     width: 43.1rem;
     align-items: center;
   }
-  header .container-logo .container-nombre-biblioteca h1 {
+  header .container-logo .container-nombre-biblioteca h2 {
     font-size: 1.4rem;
   }
-  header .container-logo .container-nombre-biblioteca span {
+  header .container-logo .container-nombre-biblioteca h1 {
     font-size: 2rem;
   }
   header .container-generadorSvg {
@@ -363,10 +359,10 @@ footer .footer .content > div .image {
     width: 76rem;
     align-items: center;
   }
-  header .container-logo .container-nombre-biblioteca h1 {
+  header .container-logo .container-nombre-biblioteca h2 {
     font-size: 2rem;
   }
-  header .container-logo .container-nombre-biblioteca span {
+  header .container-logo .container-nombre-biblioteca h1 {
     font-size: 4rem;
   }
   header .container-generadorSvg {
@@ -411,11 +407,12 @@ footer .footer .content > div .image {
     width: 76.8rem;
     align-items: center;
     margin: 0 auto;
+    gap: 2rem;
   }
-  header .container-logo .container-nombre-biblioteca h1 {
+  header .container-logo .container-nombre-biblioteca h2 {
     font-size: 4vw;
   }
-  header .container-logo .container-nombre-biblioteca span {
+  header .container-logo .container-nombre-biblioteca h1 {
     font-size: 6rem;
   }
   header .container-generadorSvg {
@@ -464,11 +461,11 @@ footer .footer .content > div .image {
     width: 1440px;
     align-items: center;
   }
-  header .container-logo .container-nombre-biblioteca h1 {
+  header .container-logo .container-nombre-biblioteca h2 {
     width: inherit;
     font-size: 3vw;
   }
-  header .container-logo .container-nombre-biblioteca span {
+  header .container-logo .container-nombre-biblioteca h1 {
     font-size: 6rem;
   }
   header .container-generadorSvg {
@@ -513,11 +510,11 @@ footer .footer .content > div .image {
     width: 188rem;
     align-items: center;
   }
-  header .container-logo .container-nombre-biblioteca h1 {
+  header .container-logo .container-nombre-biblioteca h2 {
     width: inherit;
     font-size: 3.5vw;
   }
-  header .container-logo .container-nombre-biblioteca span {
+  header .container-logo .container-nombre-biblioteca h1 {
     font-size: 6.5rem;
   }
   header .container-generadorSvg {
@@ -572,15 +569,15 @@ footer .footer .content > div .image {
     border-radius: 20rem;
   }
   header .container-logo .container-nombre-biblioteca {
-    width: 190rem;
-    align-items: center;
+    width: 70rem;
+    text-align: center;
+  }
+  header .container-logo .container-nombre-biblioteca h2 {
+    width: inherit;
+    font-size: 3rem;
   }
   header .container-logo .container-nombre-biblioteca h1 {
-    width: inherit;
-    font-size: 1.5vw;
-  }
-  header .container-logo .container-nombre-biblioteca span {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   header .container-generadorSvg {
     width: 190rem;

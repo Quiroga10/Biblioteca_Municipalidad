@@ -62,8 +62,8 @@ nav{
         }
         .secciones-menu {
             position: fixed;
-            top: -16rem;
-            left: 40rem;
+            top: 8rem;
+            left: 29rem;
             bottom: 0;
             z-index: 3;
             opacity: 0;
@@ -155,8 +155,11 @@ header{
             width: 35rem;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            text-align: center;
             color: #fffefb;
+            h2{
+                font-size: 3rem;
+            }
             h1{
                 width: auto;
                 height: 5.2rem;
@@ -172,13 +175,6 @@ header{
                 margin: 0 auto; 
                 letter-spacing: .15em;
                 transition: all 0.3s ease;
-            }
-            h1:hover{
-                transform: translate3d(0, -10px, 22px);
-                color: #ff6200;
-            }
-            span{
-                font-size: 3rem;
             }
         }
         
@@ -316,7 +312,7 @@ footer{
 
 @media (min-width: 375px) and (max-width: 2560px) {
     .secciones-menu {
-        margin-top: 24rem;
+        margin-left: 12rem;
     }
 }
 
@@ -336,10 +332,10 @@ footer{
             .container-nombre-biblioteca{
                 width: 43.1rem;
                 align-items: center;
-                h1{
+                h2{
                     font-size: 1.4rem;
                 }
-                span{
+                h1{
                     font-size: 2rem;
                 }
             }
@@ -386,10 +382,10 @@ footer{
             .container-nombre-biblioteca{
                 width: 76rem;
                 align-items: center;
-                h1{
+                h2{
                     font-size: 2rem;
                 }
-                span{
+                h1{
                     font-size: 4rem;
                 }
             }
@@ -438,10 +434,11 @@ footer{
                 width: 76.8rem;
                 align-items: center;
                 margin: 0 auto;
-                h1{
+                gap: 2rem;
+                h2{
                     font-size: 4vw;
                 }
-                span{
+                h1{
                     font-size: 6rem;
                 }
             }
@@ -494,11 +491,11 @@ footer{
             .container-nombre-biblioteca{
                 width: 1440px;
                 align-items: center;
-                h1{
+                h2{
                     width: inherit;
                     font-size: 3vw;
                 }
-                span{
+                h1{
                     font-size: 6rem;
                 }
             }
@@ -546,11 +543,11 @@ footer{
             .container-nombre-biblioteca{
                 width: 188rem;
                 align-items: center;
-                h1{
+                h2{
                     width: inherit;
                     font-size: 3.5vw;
                 }
-                span{
+                h1{
                     font-size: 6.5rem;
                 }
             }
@@ -609,14 +606,14 @@ footer{
                 border-radius: 20rem;
             }
             .container-nombre-biblioteca{
-                width: 190rem;
-                align-items: center;
-                h1{
+                width: 70rem;
+                text-align: center;
+                h2{
                     width: inherit;
-                    font-size: 1.5vw;
+                    font-size: 3rem;
                 }
-                span{
-                    font-size: 5rem;
+                h1{
+                    font-size: 4rem;
                 }
             }
         }
