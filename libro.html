@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="./css/historia.css">
-    <title>HISTORIA DE LA CREACION DE LA BIBLIOTECA MUNICIPAL DE LAMBAYEQUE “EMILIANO NIÑO PASTOR”</title>
+    <link rel="stylesheet" href="./css/libro.css">
+    <title>Libros</title>
 </head>
+
 <body>
     <nav>
         <div class="container-secciones">
@@ -31,21 +33,21 @@
         </div>
     </nav>
     <main>
-        <article>
-            <h1>HISTORIA DE LA CREACIÓN DE LA BIBLIOTECA MUNICIPAL DE LAMBAYEQUE “EMILIANO NIÑO PASTOR”</h1>
-            <p>La Biblioteca Municipal “Emiliano Niño Pastor” se formó a base de donaciones de libros, mobiliario, dinero que transfirió la “Biblioteca Femenina” que con anterioridad de muchos Años funciono en la ciudad de Lambayeque, en nombre del concejo Provincial de Lambayeque , según consta en la escritura pública de fecha 14 de julio de 1943.</p>
-            <p>La “Biblioteca Femenina” estuvo representada por las Srta. Victoria Ruiz Távara (Presidenta) y Leonor Niño Ruiz (Tesorera y fundadora) y la Municipalidad por los Srs. Miguel Oneto García, (Sindico de Rentas) y Enrique García S. (Sindico de Gastos)</p>
-            <p>En aquel documento público se estipula que la Biblioteca Municipal llevase el nombre del poeta Lambayecano “Emiliano Niño Pastor”, autor de “La Lampara de Aladino” que la Biblioteca este bajo cuidado de las Directoras que sucedieran en la Direccion del Centro Escolar de Mujeres N° 212 de la Ciudad de Lambayeque, que las Señoritas donantes quedaran en condición de Inspectoras de la Biblioteca, que la transferencia fue acordada por las integrantes de la Sociedad Cultural Deportiva (a la cual pertenencia la Biblioteca Femenina) Martha de la Piedra Ernestina de Silva, Graciela Aguinaga, Rosa Lía Buendía, Terlinda Paico Nieto, María Ulloque Gonzales e Ítala Morales Gamarra, que el Municipio se comprometía a conservar e incrementar sus fondos bibliográficos que la Biblioteca deberá funcionar día y noche, nombrándose una Biblioteca: que el Municipio debía construir un local para le funcionamiento, teniendo como base los S/. 200. 000 que hacían entrega, ademas de otras estipulaciones, el Municipio acepto tal donación en sesion de fecha 26 de Agosto de 1942.</p>
-            <p>Desafortunadamente desconocemos la fecha de fundación de la “Biblioteca Femenina” pero si sabemos que la Biblioteca Municipal “Emiliano Niño Pastor” ha pasado por tres locales donde funciono, el primero estuvo Ubicado en la Calle Grau N° 230 (donde funcionaba el Registro Electoral y estaba bajo el cuidado de la Srta. Francisca Niquen Carranza existiendo pocos libros, revistas y periódicos).</p>
-            <p>Es a partir del año 1957, en que la Biblioteca se perfila como un verdadero entro de Lectura y como un lugar de consulta, pues fue el día 5 de Julio de ese año que se inauguró su segundo local, ubicado en la Planta baja del local central del Palacio Municipal, en la gestion del Alcalde Don Atilio Chirinos Bernuy e Inspectora de Cultura y Biblioteca la Sra. Tomasa del Pino, tal acontecimiento fue en conmemoración al “Dia del Maestro”.</p>
-            <p>El auge, la seriedad y el prestigio que adquirió la Biblioteca, desde aquel entonces hasta la actualidad, se debió fundamentalmente a la dedicación puesta de manifiesto por la Srta. María Dolores Burga Sánchez, ella puso todo su empeño, trabajo y devoción por los libros de ello fueron testigos los que asistían diariamente a la Biblioteca, no nos equivocamos e afirmar que los libros constituyeron sus hijos y la Biblioteca su hogar.</p>
-            <p>Tal fue el papel gravitante que jugo la Biblioteca “Emiliano Niño Pastor” en el ambiente educativo y en el mundo cultural de la “Ciudad Evocadora”, que su funcionamiento coincidió con la creación de la Escuela Nacional, hoy en día Universidad Nacional “Pedro Ruiz Gallo” (1970), que los libros que compraba la Municipalidad para incrementar sus fondos bibliográficos era de acuerdo a la bibliografía solicitada por los Catedráticos en sus asignaturas, con el fin de que los estudiantes universitarios contasen con las facilidades lectivas que las misma universidad todavia no estaba en condiciones de brindar en su totalidad por su reciente creación. La Biblioteca “Emiliano Niño Pastor” supo poner en práctica correcta, disponiendo del material bibliográfico que sus asiduos lectores requerían.</p>
-            <p>En el Año 1981 que recien la Biblioteca obtuvo su local propio, Ubicado en la Av. Bolívar N° 434 pese a la carencia de una sala de Conferencia y otros ambientes conexos en la gestion del Acalde Don Ángel Gonzales Castro para lo cual tuvo que esperarse que transcurrieran 25 años.</p>
-        </article>
-        <div class="container-button">
-            <button>
-                <a download="Historia" href="./pdf/Historia_Biblioteca_Municipal_Emiliano_Niño_Pastor.pdf">Descargar PDF</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar libros...">
+            <button id="searchButton" onclick="searchBooks()">
+                <i class="fas fa-search"></i> Buscar
             </button>
+        </div>
+    
+        <div class="contenedorCards" id="contenedorLibros">
+            <!-- Los libros se cargarán aquí dinámicamente -->
+        </div>
+    
+        <div id="pagination">
+            <button id="prevPage">Anterior</button>
+            <span id="currentPage">1</span>
+            <button id="nextPage">Siguiente</button>
         </div>
     </main>
     <footer>
@@ -205,4 +207,5 @@
     </footer>
     <script src="./js/navbar.js"></script>
 </body>
+
 </html>
