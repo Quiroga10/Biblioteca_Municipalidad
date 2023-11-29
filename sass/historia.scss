@@ -92,47 +92,85 @@ footer{
     }
 }
 
-// @media (min-width: 1025px) and (max-width: 1440px){
-//     main{
-//         width: 142rem;
-//         article{
-//             width: 131rem;
-//             margin: 0 auto;
-//         }
-//         .container-button{
-//             width: 142rem;
-//         }
-//     }
-// }
+@media (min-width: 431px) and (max-width: 767px){
+    main{
+        width: 76.7rem;
+        article{
+            width: 76.7rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 76.7rem;
+        }
+    }
+    footer{
+        min-width: 76.7rem;
+    }
+}
 
-// @media (min-width: 1441px) and (max-width: 1880px){
-//     main{
-//         width: 196rem;
-//         article{
-//             width: 131rem;
-//             margin: 0 auto;
-//         }
-//         .container-button{
-//             width: 196rem;
-//         }
-//     }
-// }
+@media (min-width: 768px) and (max-width: 834px){
+    main{
+        width: 83.4rem;
+        article{
+            width: 83.4rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 83.4rem;
+        }
+    }
+    footer{
+        min-width: 83.4rem;
+    }
+}
 
-// @media (min-width: 1881px) and (max-width:1920px){
-//     header{
-//         display: none;
-//     }
-//     main{
-//         width: 190rem;
-//         article{
-//             width: 138rem;
-//             margin: 0 auto;
-//         }
-//         .container-button{
-//             width: 256rem;
-//         }
-//     }
-//     footer{
-//         width: 190rem;
-//     }
-// }
+@media (min-width: 835px) and (max-width:1440px){
+    main{
+        width: 144rem;
+        article{
+            width: 144rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 144rem;
+        }
+    }
+    footer{
+        margin-top: 4rem;
+        width: 144rem;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1880px){
+    main{
+        width: 188rem;
+        article{
+            width: 188rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 188rem;
+        }
+    }
+    footer{
+        margin-top: 4rem;
+        width: 188rem;
+    }
+}
+
+@media (min-width: 1881px) and (max-width:1920px){
+    main{
+        width: 192rem;
+        article{
+            width: 140rem;
+            margin: 0 auto;
+        }
+        .container-button{
+            width: 192rem;
+        }
+    }
+    footer{
+        margin-top: 4rem;
+        width: 192rem;
+    }
+}

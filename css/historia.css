@@ -77,7 +77,7 @@ nav .container-secciones .secciones-menu ul {
 nav .container-secciones .secciones-menu ul li {
   padding: 10px;
   transition: transform 0.3s;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 nav .container-secciones .secciones-menu ul li a {
   color: #183153;
@@ -170,7 +170,7 @@ header .container-generadorSvg {
   overflow: hidden;
   width: 36rem;
   height: 9rem;
-  top: 36.8rem;
+  top: 29.8rem;
 }
 header .container-generadorSvg .generadorSvg {
   width: 36rem;
@@ -336,7 +336,7 @@ footer .footer .content > div .image {
     min-width: 43rem;
   }
   nav .container-secciones .secciones-menu {
-    margin-left: -6rem;
+    margin-left: 5rem;
   }
   footer {
     min-width: 43rem;
@@ -367,7 +367,7 @@ footer .footer .content > div .image {
   }
   header .container-generadorSvg {
     width: 76.7rem;
-    top: 37rem;
+    top: 30rem;
   }
   header .container-generadorSvg .generadorSvg {
     width: 76.7rem;
@@ -545,21 +545,21 @@ footer .footer .content > div .image {
 }
 @media (min-width: 1881px) and (max-width: 1920px) {
   nav {
-    width: 190rem;
+    width: 192rem;
     top: -1rem;
   }
   nav .container-secciones {
-    min-width: 190rem;
+    min-width: 192rem;
   }
   header {
-    width: 190rem;
+    width: 192rem;
     height: 89vh;
   }
   header .container-logo {
     justify-content: center;
     color: #000;
     gap: 3rem;
-    width: 190rem;
+    width: 192rem;
     height: 75rem;
     background-size: cover;
   }
@@ -580,19 +580,19 @@ footer .footer .content > div .image {
     font-size: 4rem;
   }
   header .container-generadorSvg {
-    width: 190rem;
+    width: 192rem;
     height: 15rem;
     top: 67.4rem;
   }
   header .container-generadorSvg .generadorSvg {
-    width: 190rem;
+    width: 192rem;
     height: 15rem;
   }
   header .container-generadorSvg .generadorSvg .colorOnda_dos {
     fill: #fff;
   }
   footer {
-    width: 190rem;
+    width: 192rem;
   }
   footer .footer .bubbles {
     width: 172rem;
@@ -685,6 +685,84 @@ footer {
   }
   footer {
     min-width: 43rem;
+  }
+}
+@media (min-width: 431px) and (max-width: 767px) {
+  main {
+    width: 76.7rem;
+  }
+  main article {
+    width: 76.7rem;
+    margin: 0 auto;
+  }
+  main .container-button {
+    width: 76.7rem;
+  }
+  footer {
+    min-width: 76.7rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 834px) {
+  main {
+    width: 83.4rem;
+  }
+  main article {
+    width: 83.4rem;
+    margin: 0 auto;
+  }
+  main .container-button {
+    width: 83.4rem;
+  }
+  footer {
+    min-width: 83.4rem;
+  }
+}
+@media (min-width: 835px) and (max-width: 1440px) {
+  main {
+    width: 144rem;
+  }
+  main article {
+    width: 144rem;
+    margin: 0 auto;
+  }
+  main .container-button {
+    width: 144rem;
+  }
+  footer {
+    margin-top: 4rem;
+    width: 144rem;
+  }
+}
+@media (min-width: 1441px) and (max-width: 1880px) {
+  main {
+    width: 188rem;
+  }
+  main article {
+    width: 188rem;
+    margin: 0 auto;
+  }
+  main .container-button {
+    width: 188rem;
+  }
+  footer {
+    margin-top: 4rem;
+    width: 188rem;
+  }
+}
+@media (min-width: 1881px) and (max-width: 1920px) {
+  main {
+    width: 192rem;
+  }
+  main article {
+    width: 140rem;
+    margin: 0 auto;
+  }
+  main .container-button {
+    width: 192rem;
+  }
+  footer {
+    margin-top: 4rem;
+    width: 192rem;
   }
 }
 

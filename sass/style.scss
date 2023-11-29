@@ -298,6 +298,9 @@ main{
                     .body{
                         width: 4rem;
                     }
+                    .description{
+                        width: 21rem;
+                    }
                 }
             }
         }
@@ -421,7 +424,7 @@ main{
 
 @media (min-width: 1881px) and (max-width:1920px){
     main{
-        width: 190rem;
+        width: 192rem;
         margin: 0 auto;
         section{
             .container-titulos{

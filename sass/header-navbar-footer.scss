@@ -87,7 +87,7 @@ nav{
                 li{
                     padding: 10px;
                     transition: transform 0.3s;
-                    margin-bottom: 4rem;
+                    margin-bottom: 1rem;
                     a{
                         color: #183153;
                         text-decoration: none;
@@ -185,7 +185,7 @@ header{
         overflow: hidden;
         width: 36rem;
         height: 9rem;
-        top: 36.8rem;
+        top: 29.8rem;
         .generadorSvg{
             width: 36rem;
             height: 9rem;
@@ -356,7 +356,7 @@ footer{
         .container-secciones{
             min-width: 43rem;
             .secciones-menu{
-                margin-left: -6rem;
+                margin-left: 5rem;
             }
         }
     }
@@ -392,7 +392,7 @@ footer{
         }
         .container-generadorSvg{
             width: 76.7rem;
-            top: 37rem;
+            top: 30rem;
             .generadorSvg{
                 width: 76.7rem;
             }
@@ -584,20 +584,20 @@ footer{
 
 @media (min-width: 1881px) and (max-width:1920px){
     nav{
-        width: 190rem;
+        width: 192rem;
         top: -1rem;
         .container-secciones{
-            min-width: 190rem;
+            min-width: 192rem;
         }
     }
     header{
-        width: 190rem;
+        width: 192rem;
         height: 89vh;
         .container-logo{
             justify-content: center;
             color: $color-text;
             gap: 3rem;
-            width: 190rem;
+            width: 192rem;
             height: 75rem;
             background-size: cover;
             img{
@@ -618,11 +618,11 @@ footer{
             }
         }
         .container-generadorSvg{
-            width: 190rem;
+            width: 192rem;
             height: 15rem;
             top: 67.4rem;
             .generadorSvg{
-                width: 190rem;
+                width: 192rem;
                 height: 15rem;
                 .colorOnda_dos{
                     fill: $color-white;
@@ -631,7 +631,7 @@ footer{
         }
     }
     footer{
-        width: 190rem;
+        width: 192rem;
         .footer{
             .bubbles{
                 width: 172rem;
