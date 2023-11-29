@@ -545,21 +545,21 @@ footer .footer .content > div .image {
 }
 @media (min-width: 1881px) and (max-width: 1920px) {
   nav {
-    width: 192rem;
+    width: 190rem;
     top: -1rem;
   }
   nav .container-secciones {
-    min-width: 192rem;
+    min-width: 190rem;
   }
   header {
-    width: 192rem;
+    width: 190rem;
     height: 89vh;
   }
   header .container-logo {
     justify-content: center;
     color: #000;
     gap: 3rem;
-    width: 192rem;
+    width: 190rem;
     height: 75rem;
     background-size: cover;
   }
@@ -580,19 +580,19 @@ footer .footer .content > div .image {
     font-size: 4rem;
   }
   header .container-generadorSvg {
-    width: 192rem;
+    width: 190rem;
     height: 15rem;
     top: 67.4rem;
   }
   header .container-generadorSvg .generadorSvg {
-    width: 192rem;
+    width: 190rem;
     height: 15rem;
   }
   header .container-generadorSvg .generadorSvg .colorOnda_dos {
     fill: #fff;
   }
   footer {
-    width: 192rem;
+    width: 190rem;
   }
   footer .footer .bubbles {
     width: 172rem;
