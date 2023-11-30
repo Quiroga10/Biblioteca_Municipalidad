@@ -758,6 +758,8 @@ main section .container-cards .cards .description .container_parrafos_libro p:nt
   display: none;
 }
 main section .container-ubicacion {
+  width: 90rem;
+  margin: 0 auto;
   margin-bottom: 5rem;
 }
 main section .container-ubicacion img {
