@@ -961,7 +961,6 @@ main section .container-form-contact form .container-submit-form input[type=subm
   }
   main section {
     margin: 0 auto;
-    width: 90rem;
   }
   main section .container-cards {
     justify-content: center;
@@ -977,7 +976,7 @@ main section .container-form-contact form .container-submit-form input[type=subm
   main {
     width: 190rem;
     margin: 0 auto;
-    margin-top: -18rem;
+    margin-top: -10rem;
   }
   main section .container-titulos {
     margin-bottom: 5rem;
@@ -985,7 +984,6 @@ main section .container-form-contact form .container-submit-form input[type=subm
   }
   main section {
     margin: 0 auto;
-    width: 90rem;
   }
   main section .container-cards {
     justify-content: center;
