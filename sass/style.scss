@@ -3,66 +3,6 @@
 main{
     min-width: 36rem;
     margin-top: -10rem;
-    .sticky-container{
-        padding:0px;
-        margin:0px;
-        position:fixed;
-        right:-177px;
-        top:132px;
-        width:210px;
-        z-index: 1100;
-        .sticky{
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-            li{
-                list-style-type:none;
-                background-color:transparent;
-                color:#efefef;
-                height:43px;
-                padding:0px;
-                margin:0px 0px 1px 0px;
-                -webkit-transition:all 0.25s ease-in-out;
-                -moz-transition:all 0.25s ease-in-out;
-                -o-transition:all 0.25s ease-in-out;
-                transition:all 0.25s ease-in-out;
-                cursor:pointer;
-                fa-brands{
-                    float: left;
-                    margin: 5px 4px;
-                    margin-right: 5px;
-                }
-                p{
-                    display: none;
-                    padding-top: 5px;
-                    margin: 0px;
-                    line-height: 16px;
-                    font-size: 21px;
-                    a{
-                        display: none;
-                        text-decoration: none;
-                        color: #2c3539;
-                    }
-                    a:hover{
-                        text-decoration: underline;
-                    }
-                }
-            }
-            li:hover{
-                p{
-                    display: block;
-                }
-                a{
-                    display: block;
-                }
-                display: flex;
-                flex-direction: row;
-                gap: 4rem;
-                margin-left: -115px;
-                margin-bottom: 2rem;
-            }
-        }
-    }
     section{
         .container-titulos{
             display: flex;

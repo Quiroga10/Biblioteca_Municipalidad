@@ -16,7 +16,7 @@ nav {
   z-index: 1;
 }
 nav .container-secciones {
-  background-color: #183153;
+  background-color: #2E4A6B;
   width: 36rem;
   height: 9.5rem;
   display: flex;
@@ -193,6 +193,67 @@ header video {
   object-fit: cover;
   opacity: 0.5s;
   z-index: -1;
+}
+
+.sticky-container {
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: -143px;
+  top: 132px;
+  width: 210px;
+  z-index: 1100;
+}
+.sticky-container .sticky {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.sticky-container .sticky li {
+  list-style-type: none;
+  background-color: transparent;
+  color: #efefef;
+  height: 43px;
+  padding: 0px;
+  margin: 0px 0px 1px 0px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+}
+.sticky-container .sticky li fa-brands {
+  float: left;
+  margin: 5px 4px;
+  margin-right: 5px;
+}
+.sticky-container .sticky li p {
+  display: none;
+  padding-top: 5px;
+  margin: 0px;
+  line-height: 16px;
+  font-size: 21px;
+}
+.sticky-container .sticky li p a {
+  display: none;
+  text-decoration: none;
+  color: #2c3539;
+}
+.sticky-container .sticky li p a:hover {
+  text-decoration: underline;
+}
+.sticky-container .sticky li:hover {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-left: -115px;
+  margin-bottom: 2rem;
+}
+.sticky-container .sticky li:hover p {
+  display: block;
+}
+.sticky-container .sticky li:hover a {
+  display: block;
 }
 
 .container-description {
@@ -602,66 +663,6 @@ footer .footer .content > div .image {
 main {
   min-width: 36rem;
   margin-top: -10rem;
-}
-main .sticky-container {
-  padding: 0px;
-  margin: 0px;
-  position: fixed;
-  right: -177px;
-  top: 132px;
-  width: 210px;
-  z-index: 1100;
-}
-main .sticky-container .sticky {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-main .sticky-container .sticky li {
-  list-style-type: none;
-  background-color: transparent;
-  color: #efefef;
-  height: 43px;
-  padding: 0px;
-  margin: 0px 0px 1px 0px;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
-  cursor: pointer;
-}
-main .sticky-container .sticky li fa-brands {
-  float: left;
-  margin: 5px 4px;
-  margin-right: 5px;
-}
-main .sticky-container .sticky li p {
-  display: none;
-  padding-top: 5px;
-  margin: 0px;
-  line-height: 16px;
-  font-size: 21px;
-}
-main .sticky-container .sticky li p a {
-  display: none;
-  text-decoration: none;
-  color: #2c3539;
-}
-main .sticky-container .sticky li p a:hover {
-  text-decoration: underline;
-}
-main .sticky-container .sticky li:hover {
-  display: flex;
-  flex-direction: row;
-  gap: 4rem;
-  margin-left: -115px;
-  margin-bottom: 2rem;
-}
-main .sticky-container .sticky li:hover p {
-  display: block;
-}
-main .sticky-container .sticky li:hover a {
-  display: block;
 }
 main section .container-titulos {
   display: flex;
