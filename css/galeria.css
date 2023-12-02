@@ -171,7 +171,7 @@ header .container-generadorSvg {
   overflow: hidden;
   width: 36rem;
   height: 9rem;
-  top: 29.8rem;
+  top: 30.8rem;
 }
 header .container-generadorSvg .generadorSvg {
   width: 36rem;
@@ -681,15 +681,25 @@ main .gallery .contenedor h3 {
   color: #947b6a;
   margin-bottom: 40px;
   font-size: 40px;
+  animation: rebotar 2s ease-in-out;
+}
+@keyframes rebotar {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 main .gallery .contenedor .contenedor-galeria {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  overflow-x: auto;
+  justify-content: flex-start;
+  gap: 0.5rem;
 }
 main .gallery .contenedor .contenedor-galeria .img-galeria {
   object-fit: cover;
-  width: 30%;
+  width: 46%;
   display: block;
   margin-bottom: 15px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
@@ -726,7 +736,7 @@ main .imagen-light.show {
 }
 main .imagen-light .agregar-imagen {
   object-fit: cover;
-  width: 64rem;
+  width: 32rem;
   border-radius: 10px;
   transform: scale(0);
   transition: transform 0.3s 0.2s;
@@ -750,12 +760,18 @@ main .imagen-light .close {
     margin-top: 9rem;
     height: auto;
   }
+  main .imagen-light .agregar-imagen {
+    width: 40rem;
+  }
 }
 @media (min-width: 431px) and (max-width: 767px) {
   main {
     min-width: 76.7rem;
     margin-top: 9rem;
     height: auto;
+  }
+  main .imagen-light .agregar-imagen {
+    width: 69rem;
   }
 }
 @media (min-width: 768px) and (max-width: 834px) {
@@ -764,12 +780,18 @@ main .imagen-light .close {
     margin-top: 9rem;
     height: auto;
   }
+  main .imagen-light .agregar-imagen {
+    width: 75rem;
+  }
 }
 @media (min-width: 835px) and (max-width: 1440px) {
   main {
     width: 144rem;
     margin-top: 9rem;
     height: auto;
+  }
+  main .imagen-light .agregar-imagen {
+    width: 95rem;
   }
 }
 @media (min-width: 1441px) and (max-width: 1880px) {
@@ -778,12 +800,18 @@ main .imagen-light .close {
     margin-top: 9rem;
     height: auto;
   }
+  main .imagen-light .agregar-imagen {
+    width: 80rem;
+  }
 }
 @media (min-width: 1881px) and (max-width: 1920px) {
   main {
     width: 190rem;
     margin-top: 9rem;
     height: auto;
+  }
+  main .imagen-light .agregar-imagen {
+    width: 95rem;
   }
 }
 
