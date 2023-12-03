@@ -681,7 +681,8 @@ main section .container-titulos h2 {
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 13.5px; /* 61.364% */
+  line-height: 13.5px;
+  /* 61.364% */
   letter-spacing: 0.44px;
   text-transform: uppercase;
   margin-top: 2rem;
@@ -693,7 +694,8 @@ main section .container-titulos h3 {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 135%; /* 27px */
+  line-height: 135%;
+  /* 27px */
 }
 main section .container-cards {
   display: flex;
@@ -766,25 +768,32 @@ main section .container-ubicacion {
 main section .container-ubicacion img {
   width: 100%;
 }
-main section .container-ubicacion #ubicacion {
-  margin-left: 1rem;
+main #ubicacion {
+  max-width: 90rem;
+  margin: 0 auto;
 }
-main section .container-ubicacion #ubicacion h3 {
+main #ubicacion h3 {
   font-size: 2.5rem;
 }
-main section .container-ubicacion #ubicacion p {
+main #ubicacion p {
   margin-top: 1rem;
   font-size: 1.7rem;
 }
-main section .container-ubicacion #map {
+main #ubicacion #map {
   width: 80%;
-  height: 300px; /* Altura inicial del mapa */
-  margin: 0 auto; /* Centra el mapa horizontalmente */
+  height: 300px;
+  /* Altura inicial del mapa */
+  margin: 0 auto;
+  /* Centra el mapa horizontalmente */
   margin-top: 4rem;
-  margin-bottom: 20px; /* Espaciado inferior */
-  border: 2px solid #ccc; /* Agregar un borde alrededor del mapa */
-  border-radius: 10px; /* Añadir bordes redondeados al contenedor del mapa */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Agregar una sombra alrededor del mapa */
+  margin-bottom: 20px;
+  /* Espaciado inferior */
+  border: 2px solid #ccc;
+  /* Agregar un borde alrededor del mapa */
+  border-radius: 10px;
+  /* Añadir bordes redondeados al contenedor del mapa */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  /* Agregar una sombra alrededor del mapa */
 }
 main section .container-form-contact {
   min-width: 32rem;
@@ -816,7 +825,9 @@ main section .container-form-contact form label {
   font-weight: bold;
   margin-bottom: 1rem;
 }
-main section .container-form-contact form input[type=text], main section .container-form-contact form input[type=email], main section .container-form-contact form textarea {
+main section .container-form-contact form input[type=text],
+main section .container-form-contact form input[type=email],
+main section .container-form-contact form textarea {
   padding: 1rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
