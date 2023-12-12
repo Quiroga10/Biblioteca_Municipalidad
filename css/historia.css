@@ -52,7 +52,7 @@ nav .container-secciones .secciones p {
 nav .container-secciones .secciones-menu {
   position: fixed;
   top: 8rem;
-  left: 26rem;
+  left: 29rem;
   bottom: 0;
   z-index: 3;
   opacity: 0;
@@ -378,7 +378,7 @@ footer .footer .content > div .image {
     align-items: center;
   }
   header .container-logo .container-nombre-biblioteca h2 {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
   header .container-logo .container-nombre-biblioteca h1 {
     font-size: 2rem;
