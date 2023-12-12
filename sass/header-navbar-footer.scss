@@ -23,7 +23,8 @@ $color-shadow-cards: rgb(6 5 5);
 
 nav{
     position: fixed;
-    min-width: 36rem;
+    min-width: 32rem;
+    width: 36rem;
     top: -1rem;
     z-index: 1;
     .container-secciones{
@@ -62,7 +63,7 @@ nav{
         .secciones-menu {
             position: fixed;
             top: 8rem;
-            left: 29rem;
+            left: 26rem;
             bottom: 0;
             z-index: 3;
             opacity: 0;
@@ -130,8 +131,9 @@ nav{
 
 header{
     position: relative;
-    min-width: 36rem;
-    height: 46vh;
+    min-width: 32rem;
+    width: 36rem;
+    height: auto;
     color: $color-white;
     .container-logo{
         position: relative;
@@ -151,7 +153,7 @@ header{
             border-radius: 11rem;
         }
         .container-nombre-biblioteca{
-            width: 35rem;
+            width: 30rem;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -247,7 +249,7 @@ header{
                 a{
                     display: none;
                     text-decoration: none;
-                    color: #2c3539;
+                    color: #183153;
                 }
                 a:hover{
                     text-decoration: underline;
@@ -281,7 +283,8 @@ header{
 }
 
 footer{
-    min-width: 36rem;
+    min-width: 32rem;
+    width: 36rem;
     .footer {
         z-index: 2;
         --footer-background:#183153;

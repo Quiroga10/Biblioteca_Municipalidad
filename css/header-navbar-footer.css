@@ -10,7 +10,8 @@ html {
 
 nav {
   position: fixed;
-  min-width: 36rem;
+  min-width: 32rem;
+  width: 36rem;
   top: -1rem;
   z-index: 1;
 }
@@ -51,7 +52,7 @@ nav .container-secciones .secciones p {
 nav .container-secciones .secciones-menu {
   position: fixed;
   top: 8rem;
-  left: 29rem;
+  left: 26rem;
   bottom: 0;
   z-index: 3;
   opacity: 0;
@@ -117,8 +118,9 @@ nav .container-secciones .container-angle-right .fa-solid {
 
 header {
   position: relative;
-  min-width: 36rem;
-  height: 46vh;
+  min-width: 32rem;
+  width: 36rem;
+  height: auto;
   color: #fff;
 }
 header .container-logo {
@@ -140,7 +142,7 @@ header .container-logo img {
   border-radius: 11rem;
 }
 header .container-logo .container-nombre-biblioteca {
-  width: 35rem;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -236,7 +238,7 @@ header video {
 .sticky-container .sticky li p a {
   display: none;
   text-decoration: none;
-  color: #2c3539;
+  color: #183153;
 }
 .sticky-container .sticky li p a:hover {
   text-decoration: underline;
@@ -266,7 +268,8 @@ header video {
 }
 
 footer {
-  min-width: 36rem;
+  min-width: 32rem;
+  width: 36rem;
 }
 footer .footer {
   z-index: 2;
