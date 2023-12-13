@@ -9,6 +9,16 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 nav {
   position: fixed;
   min-width: 32rem;
@@ -274,7 +284,7 @@ footer {
 }
 footer .footer {
   z-index: 2;
-  --footer-background:#183153;
+  background: #183153;
   display: grid;
   position: relative;
   grid-area: footer;
@@ -288,13 +298,13 @@ footer .footer .bubbles {
   left: 0;
   right: 0;
   height: 1rem;
-  background: var(--footer-background);
+  background: #183153;
   filter: url("#blob");
 }
 footer .footer .bubbles .bubble {
   position: absolute;
   left: var(--position, 50%);
-  background: var(--footer-background);
+  background: #183153;
   border-radius: 100%;
   animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
   transform: translate(-50%, 100%);
@@ -305,7 +315,7 @@ footer .footer .content {
   grid-template-columns: 1fr auto;
   grid-gap: 4rem;
   padding: 2rem;
-  background: var(--footer-background);
+  background: #183153;
 }
 footer .footer .content a, footer .footer .content p {
   color: #F5F7FA;
@@ -890,7 +900,7 @@ main section .container-form-contact form .container-submit-form input[type=subm
   }
   main section {
     margin: 0 auto;
-    width: 64rem;
+    width: 76rem;
   }
   main section .container-cards {
     justify-content: flex-start;

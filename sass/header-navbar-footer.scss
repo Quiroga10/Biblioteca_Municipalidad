@@ -1,26 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html{
-    font-size: 62.5%;
-}
-
-
-$font-jockey-one: 'Jockey One', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
-
-$color-background-nav: #2E4A6B;
-$color-border-nav: #646464;
-$color-text: #000;
-$color-icon: #B9B2B2;
-$color-white: #fff;
-$color-orange: #FD9158;
-$color-dark-gray: #353430;
-$color-shadow-cards: rgb(6 5 5);
-
+@use './reset';
 nav{
     position: fixed;
     min-width: 32rem;
@@ -28,13 +6,13 @@ nav{
     top: -1rem;
     z-index: 1;
     .container-secciones{
-        background-color: $color-background-nav;
+        background-color: reset.$color-background-nav;
         width: 36rem;
         height: 9.5rem;
         display: flex;
         justify-content: space-between;
-        border-top: 0.3rem solid $color-border-nav;
-        border-bottom: 0.3rem solid $color-border-nav;
+        border-top: 0.3rem solid reset.$color-border-nav;
+        border-bottom: 0.3rem solid reset.$color-border-nav;
         .secciones{
             display: flex;
             width: 30rem;
@@ -45,15 +23,15 @@ nav{
             .fa-solid{
                 width: 2.2rem;
                 height: 2.2rem;
-                color: $color-icon;
+                color: reset.$color-icon;
                 font-size: 3rem;
             }
             p{
                 width: 14.6rem;
                 height: 4.5rem;
-                color: $color-white;
+                color: reset.$color-white;
                 text-align: center;
-                font-family: $font-jockey-one;
+                font-family: reset.$font-jockey-one;
                 font-size: 2.2rem;
                 font-style: normal;
                 font-weight: 400;
@@ -122,7 +100,7 @@ nav{
             cursor: pointer;
             .fa-solid{
                 stroke-width: 0.2rem;
-                color: $color-icon;
+                color: reset.$color-icon;
                 font-size: 3rem;
             }
         }
@@ -134,7 +112,7 @@ header{
     min-width: 32rem;
     width: 36rem;
     height: auto;
-    color: $color-white;
+    color: reset.$color-white;
     .container-logo{
         position: relative;
         width: 36rem;
@@ -149,7 +127,7 @@ header{
             width: 9.8rem;
             height: 9.8rem;
             margin: 0 auto;
-            background-color: $color-white;
+            background-color: reset.$color-white;
             border-radius: 11rem;
         }
         .container-nombre-biblioteca{
@@ -166,7 +144,7 @@ header{
                 height: 5.2rem;
                 font-size: 1.5rem;
                 text-align: center;
-                font-family: $font-jockey-one;
+                font-family: reset.$font-jockey-one;
                 font-style: normal;
                 font-weight: 500;
                 line-height: 1.2rem;
@@ -192,7 +170,7 @@ header{
             height: 9rem;
             .colorOnda_uno, .colorOnda_dos{
                 stroke: none;
-                fill: $color-white;
+                fill: reset.$color-white;
             }
             .colorOnda_uno{
                 display: none;
@@ -287,12 +265,12 @@ footer{
     width: 36rem;
     .footer {
         z-index: 2;
-        --footer-background:#183153;
+        background: reset.$color-background-footer;
         display:grid;
         position: relative;
         grid-area: footer;
         min-height:12rem;
-        color: $color-white;
+        color: reset.$color-white;
         .bubbles {
             width: 28rem;
             position: absolute;
@@ -300,12 +278,12 @@ footer{
             left:0;
             right:0;
             height:1rem;
-            background:var(--footer-background);
+            background: reset.$color-background-footer;
             filter:url("#blob");
             .bubble {
                 position: absolute;
                 left:var(--position, 50%);
-                background:var(--footer-background);
+                background:reset.$color-background-footer;
                 border-radius:100%;
                 animation:bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
                     bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
@@ -318,7 +296,7 @@ footer{
             grid-template-columns: 1fr auto;
             grid-gap: 4rem;
             padding:2rem;
-            background:var(--footer-background);
+            background:reset.$color-background-footer;
             a, p {
                 color:#F5F7FA;
                 text-decoration:none;
@@ -485,7 +463,7 @@ footer{
             justify-content: center;
             gap: 3rem;
             width: 83.4rem;
-            color: $color-text;
+            color: reset.$color-text;
             height: inherit;
             img{
                 width: 21.8rem;
@@ -542,7 +520,7 @@ footer{
             justify-content: center;
             gap: 3rem;
             width: 144rem;
-            color: $color-text;
+            color: reset.$color-text;
             height: 77.9rem;
             img{
                 width: 21.8rem;
@@ -570,7 +548,7 @@ footer{
                 width: 149rem;
                 height: 9rem;
                 .colorOnda_dos{
-                    fill: $color-white;
+                    fill: reset.$color-white;
                 }
             }
         }
@@ -622,7 +600,7 @@ footer{
                 width: 188rem;
                 height: 9rem;
                 .colorOnda_dos{
-                    fill: $color-white;
+                    fill: reset.$color-white;
                 }
             }
         }
@@ -657,7 +635,7 @@ footer{
         height: 89vh;
         .container-logo{
             justify-content: center;
-            color: $color-text;
+            color: reset.$color-text;
             gap: 3rem;
             width: 190rem;
             height: 75rem;
@@ -687,7 +665,7 @@ footer{
                 width: 190rem;
                 height: 15rem;
                 .colorOnda_dos{
-                    fill: $color-white;
+                    fill: reset.$color-white;
                 }
             }
         }
@@ -708,8 +686,8 @@ footer{
 //         height: 100vh;
 //         .container-logo{
 //             justify-content: center;
-//             background-color: $color-white;
-//             color: $color-text;
+//             background-color: reset.$color-white;
+//             color: reset.$color-text;
 //             gap: 3rem;
 //             width: 190rem;
 //             height: 83.9rem;
@@ -734,7 +712,7 @@ footer{
 //                     display: none;
 //                 }
 //                 .colorOnda_dos{
-//                     fill: $color-white;
+//                     fill: reset.$color-white;
 //                 }
 //             }
 //         }

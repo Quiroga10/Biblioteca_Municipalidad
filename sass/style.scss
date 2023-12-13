@@ -1,3 +1,4 @@
+@use "./reset";
 @import './header-navbar-footer.scss';
 
 main {
@@ -17,9 +18,9 @@ main {
             gap: 2rem;
 
             h2 {
-                color: $color-orange;
+                color: reset.$color-orange;
                 text-align: center;
-                font-family: $font-montserrat;
+                font-family: reset.$font-montserrat;
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 600;
@@ -31,9 +32,9 @@ main {
             }
 
             h3 {
-                color: $color-dark-gray;
+                color: reset.$color-dark-gray;
                 text-align: center;
-                font-family: $font-montserrat;
+                font-family: reset.$font-montserrat;
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 700;
@@ -59,7 +60,7 @@ main {
                 overflow: hidden;
                 margin-left: 1.5rem;
                 border-radius: 1.8rem;
-                box-shadow: 0.2rem 0.4rem 1.2rem $color-shadow-cards;
+                box-shadow: 0.2rem 0.4rem 1.2rem reset.$color-shadow-cards;
 
                 img {
                     width: 50%;
@@ -77,14 +78,14 @@ main {
                     top: 28rem;
                     left: 16.4rem;
                     padding: 1.4rem;
-                    font-family: $font-montserrat;
+                    font-family: reset.$font-montserrat;
                     font-weight: 600;
                     border-radius: 5rem;
-                    background-color: $color-orange;
+                    background-color: reset.$color-orange;
                     font-size: 1rem;
 
                     .fa-regular {
-                        color: $color-white;
+                        color: reset.$color-white;
                         cursor: pointer;
                     }
                 }
@@ -281,7 +282,7 @@ main {
 
         section {
             margin: 0 auto;
-            width: 64rem;
+            width: 76rem;
 
             .container-cards {
                 justify-content: flex-start;

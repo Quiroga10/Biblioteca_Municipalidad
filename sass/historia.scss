@@ -1,3 +1,4 @@
+@use './reset';
 @import './header-navbar-footer.scss';
 main{
     min-width:36rem;
@@ -23,7 +24,7 @@ main{
         width: 36rem;
         margin-bottom: 2rem;
         button{
-            background-color: $color-dark-gray;
+            background-color: reset.$color-dark-gray;
             cursor: pointer;
             border: none;
             padding: 16px 32px;
@@ -35,7 +36,7 @@ main{
             margin-bottom: 5rem;
             a{
                 text-decoration: none;
-                color: $color-white;
+                color: reset.$color-white;
             }
         }
         button::before{
