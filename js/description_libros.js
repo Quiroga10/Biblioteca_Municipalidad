@@ -1,7 +1,9 @@
-function toggleDescription(book1) {
-    const bookCard = document.getElementById(book1);
+function toggleDescription(bookId) {
+    const bookCard = document.getElementById(bookId);
     const containerDescription = bookCard.querySelector(".container-description");
     const descriptionSection = bookCard.querySelector(".description");
+
+    descriptionSection.style.display = "none";
 
     if (containerDescription.style.display === "none") {
         // Mostrar contenido original
