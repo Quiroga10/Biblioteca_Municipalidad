@@ -7,3 +7,4 @@ En el desarrollo o implementación de esta página web, es totalmente Responsive
 
 Espero que sea de ayuda a los desarrolladores web, se que puede mejorarse, pero poco a poco uno va aprendiendo.
 
+![image](https://github.com/Quiroga10/Biblioteca_Municipalidad/assets/95942923/a7ea0efd-503b-40d7-b881-e0251365a216)
