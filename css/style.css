@@ -588,7 +588,7 @@ footer .footer .content > div .image {
     align-items: center;
   }
   header .container-logo .container-nombre-biblioteca h2 {
-    width: inherit;
+    width: 100rem;
     font-size: 3.5vw;
   }
   header .container-logo .container-nombre-biblioteca h1 {
@@ -951,7 +951,8 @@ main section .container-form-contact form .container-submit-form input[type=subm
 }
 @media (min-width: 835px) and (max-width: 1440px) {
   main {
-    width: 144rem;
+    min-width: 835px;
+    max-width: 144rem;
     margin: 0 auto;
   }
   main section .container-titulos {
